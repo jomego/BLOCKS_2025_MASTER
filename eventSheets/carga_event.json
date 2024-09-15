@@ -1,0 +1,592 @@
+{
+	"name": "carga_event",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "VIENE_DE",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 694203091215195
+		},
+		{
+			"eventType": "variable",
+			"name": "idioma",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "0 - castellano / 1- ingles",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 559505224884515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 806849673514952
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 862337309667946,
+					"disabled": true,
+					"parameters": {
+						"key": "\"B1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 438760266988621,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 821239852212677
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 139165078743602,
+					"parameters": {
+						"interval-seconds": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 543814097985579,
+					"parameters": {
+						"layout": "Home"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 486516845430171,
+					"disabled": true
+				}
+			],
+			"sid": 317387377191165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 314648535499806
+				}
+			],
+			"actions": [
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 103371028853523,
+					"parameters": {
+						"key": "\"idioma\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "video",
+					"sid": 387751356001055,
+					"disabled": true
+				}
+			],
+			"sid": 267592936718014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 560779714310331,
+					"parameters": {
+						"key": "\"idioma\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 755607402699232,
+					"parameters": {
+						"key": "\"idioma\""
+					}
+				}
+			],
+			"sid": 280145455137001
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 791876313221332,
+					"parameters": {
+						"key": "\"idioma\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 124384269464250,
+					"parameters": {
+						"variable": "idioma",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 262953727958952,
+					"parameters": {
+						"tag": "\"localizacion\"",
+						"file": "Localizacion_UI.json"
+					}
+				}
+			],
+			"sid": 545909040685842
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 512481328540297,
+					"parameters": {
+						"tag": "\"localizacion\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "localizacion",
+					"sid": 599822962420408,
+					"parameters": {
+						"json": "AJAX.LastData"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 893717377348172
+				},
+				{
+					"callFunction": "localizacion",
+					"sid": 760998905477720
+				}
+			],
+			"sid": 699449476892295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 486202878828611,
+					"parameters": {
+						"key": "\"idioma\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 892487138692046,
+					"parameters": {
+						"key": "\"idioma\"",
+						"value": "idioma"
+					}
+				},
+				{
+					"id": "request-project-file",
+					"objectClass": "AJAX",
+					"sid": 689344307252617,
+					"parameters": {
+						"tag": "\"localizacion\"",
+						"file": "Localizacion_UI.json"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 387237491896617
+				},
+				{
+					"callFunction": "localizacion",
+					"sid": 294038028756610
+				}
+			],
+			"sid": 774905393898543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loaded",
+					"objectClass": "FirebaseV9SDK",
+					"sid": 322785953016065
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 228493119848451,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 503529292839659
+		},
+		{
+			"functionName": "localizacion",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 804065903595610,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Loading",
+							"sid": 627628885023964,
+							"parameters": {
+								"text": "localizacion.At(0,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_play",
+							"sid": 442720524834972,
+							"parameters": {
+								"text": "localizacion.At(1,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_shop",
+							"sid": 551810007072549,
+							"parameters": {
+								"text": "localizacion.At(2,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Ranking",
+							"sid": 384960682086833,
+							"parameters": {
+								"text": "localizacion.At(3,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_setting",
+							"sid": 726639345651346,
+							"parameters": {
+								"text": "localizacion.At(4,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_more_games_setting",
+							"sid": 738785435877120,
+							"parameters": {
+								"text": "localizacion.At(5,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_privacy_policy_setting",
+							"sid": 492095621683054,
+							"parameters": {
+								"text": "localizacion.At(6,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_lenguaje",
+							"sid": 527780602057124,
+							"parameters": {
+								"text": "localizacion.At(7,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_moregames2",
+							"sid": 949264488375006,
+							"parameters": {
+								"text": "localizacion.At(8,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TITULO_SHOP_1",
+							"sid": 497116123596574,
+							"parameters": {
+								"text": "localizacion.At(9,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DESCRIPCION_SHOP_1",
+							"sid": 784473092200375,
+							"parameters": {
+								"text": "localizacion.At(10,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TITULO_SHOP_2",
+							"sid": 308007859263515,
+							"parameters": {
+								"text": "localizacion.At(11,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DESCRIPCION_SHOP_2",
+							"sid": 674697583692859,
+							"parameters": {
+								"text": "localizacion.At(12,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TITULO_SHOP_3",
+							"sid": 793379052594446,
+							"parameters": {
+								"text": "localizacion.At(13,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DESCRIPCION_SHOP_3",
+							"sid": 829764851502847,
+							"parameters": {
+								"text": "localizacion.At(14,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TITULO_SHOP_4",
+							"sid": 184530730470222,
+							"parameters": {
+								"text": "localizacion.At(15,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DESCRIPCION_SHOP_4",
+							"sid": 133016072661344,
+							"parameters": {
+								"text": "localizacion.At(16,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TITULO_SHOP_5",
+							"sid": 937555501342739,
+							"parameters": {
+								"text": "localizacion.At(17,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DESCRIPCION_SHOP_5",
+							"sid": 410921468901866,
+							"parameters": {
+								"text": "localizacion.At(18,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_CONFIRMAR_COMPRA",
+							"sid": 186923312729410,
+							"parameters": {
+								"text": "localizacion.At(19,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_descripcion_comprar_quitar_publi",
+							"sid": 329137206448556,
+							"parameters": {
+								"text": "localizacion.At(20,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_precio_comprar_quitar_publi2",
+							"sid": 365105831520870,
+							"parameters": {
+								"text": "localizacion.At(21,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "text_COMPRAR",
+							"sid": 927172801202841,
+							"parameters": {
+								"text": "localizacion.At(22,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "GIRAR2",
+							"sid": 101588974050347,
+							"parameters": {
+								"text": "localizacion.At(23,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_CONFIRMAR_SALIR_PARTIDA",
+							"sid": 985813572514257,
+							"parameters": {
+								"text": "localizacion.At(24,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_CONFIRMACION_EXPLICACION",
+							"sid": 506403112952052,
+							"parameters": {
+								"text": "localizacion.At(25,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_ACEPTAR",
+							"sid": 851609514212241,
+							"parameters": {
+								"text": "localizacion.At(26,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_titulo_ruleta",
+							"sid": 684927322332438,
+							"parameters": {
+								"text": "localizacion.At(31,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_lanzar_ruleta",
+							"sid": 814076617097178,
+							"parameters": {
+								"text": "localizacion.At(32,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_BOOSTER_TITULO",
+							"sid": 727268794576947,
+							"parameters": {
+								"text": "localizacion.At(33,idioma)"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_seleccionar_ficha_1_6",
+							"sid": 466473042249718,
+							"parameters": {
+								"text": "localizacion.At(34,idioma)"
+							}
+						}
+					],
+					"sid": 153494465388488
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "video",
+					"sid": 663067533345461
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "video",
+					"sid": 809814436069935,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 531150190661873,
+					"parameters": {
+						"layer": "\"Capa 0\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 330262081759472,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loaded",
+							"objectClass": "FirebaseV9SDK",
+							"sid": 420758210654616
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 580094934328484,
+							"parameters": {
+								"layout": "Home"
+							}
+						}
+					],
+					"sid": 220491398078754
+				}
+			]
+		}
+	],
+	"sid": 562541535388704
+}

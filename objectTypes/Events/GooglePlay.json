@@ -1,0 +1,16 @@
+{
+	"name": "GooglePlay",
+	"plugin-id": "googleplay",
+	"sid": 902630025517031,
+	"singleglobal-inst": {
+		"type": "GooglePlay",
+		"properties": {
+			"application-id": "blocks-challenge-c970e",
+			"client-id": "429738650401-q40n7qtaq8gi8hd727a2t74jhjncubgg.apps.googleusercontent.com",
+			"game-id": "com.merlugames.blockschallenge"
+		},
+		"uid": 292,
+		"sid": 262123807028568,
+		"tags": ""
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"name": "Booster_5",
+	"plugin-id": "Sprite",
+	"sid": 246235277073553,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 117,
+						"height": 139,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/webp",
+						"imageSpriteId": 9209522,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 155234897779940,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

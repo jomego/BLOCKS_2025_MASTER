@@ -1,0 +1,111 @@
+{
+	"name": "GL_DiceMatchTimeline",
+	"plugin-id": "Sprite",
+	"sid": 791837887711833,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "uid_hexagon",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 704298951408990
+		},
+		{
+			"name": "is_new",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 669900538824139
+		},
+		{
+			"name": "row",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 828167341360021
+		},
+		{
+			"name": "col",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 502511769839312
+		},
+		{
+			"name": "is_merge_target",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 479657840422029
+		},
+		{
+			"name": "total_dice_merge",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 581292163193403
+		},
+		{
+			"name": "uid_dice_target",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 734789280199489
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 928700573565606
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5584457,
+						"collisionPoly": {
+							"points": [
+								0.24626865671641784,
+								0.3233830845771141,
+								0.49999999999999983,
+								0.1791044776119402,
+								0.7562189054726369,
+								0.3208955223880597,
+								0.7487562189054718,
+								0.6343283582089542,
+								0.49999999999999994,
+								0.7661691542288555,
+								0.24378109452736313,
+								0.6318407960198995
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 276868896047865,
+				"name": "1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

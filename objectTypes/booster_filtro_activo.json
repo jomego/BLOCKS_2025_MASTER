@@ -1,0 +1,57 @@
+{
+	"name": "booster_filtro_activo",
+	"plugin-id": "Sprite",
+	"sid": 230136452703497,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 178,
+						"height": 55,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1555825,
+						"collisionPoly": {
+							"points": [
+								0.08426966292134831,
+								0,
+								0.20786516853932585,
+								0,
+								1,
+								0.09090909090909091,
+								1,
+								0.8727272727272727,
+								0.10674157303370786,
+								1,
+								0,
+								0.8727272727272727,
+								0,
+								0.10909090909090909
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 775964827325300,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

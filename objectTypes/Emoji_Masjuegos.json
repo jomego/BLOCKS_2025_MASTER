@@ -1,0 +1,39 @@
+{
+	"name": "Emoji_Masjuegos",
+	"plugin-id": "Sprite",
+	"sid": 481270743536745,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 336,
+						"height": 193,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/webp",
+						"imageSpriteId": 3583132,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 811806792644790,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

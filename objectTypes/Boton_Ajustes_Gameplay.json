@@ -1,0 +1,57 @@
+{
+	"name": "Boton_Ajustes_Gameplay",
+	"plugin-id": "Sprite",
+	"sid": 189977177721118,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 69,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9958498,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.7169811320754716,
+								0.9710144927536232,
+								0.7924528301886793,
+								0.927536231884058,
+								0.8490566037735849,
+								0.7391304347826086,
+								0.9811320754716981,
+								0,
+								0.9811320754716981
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 848496275244697,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

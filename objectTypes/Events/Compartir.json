@@ -1,0 +1,12 @@
+{
+	"name": "Compartir",
+	"plugin-id": "Share",
+	"sid": 199274860367540,
+	"singleglobal-inst": {
+		"type": "Compartir",
+		"properties": {},
+		"uid": 383,
+		"sid": 953990739080710,
+		"tags": ""
+	}
+}

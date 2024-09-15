@@ -1,0 +1,1653 @@
+{
+	"name": "HomeEvent",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "TIENE_PUBLICIDAD",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "1 - TIENE / 0 -NO TIENEÇ",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 695728111082919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 756150746478911,
+					"parameters": {
+						"object": "PLAY",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 888796236773727,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "SetMaxFPS",
+							"objectClass": "LimitFPS",
+							"sid": 308607038747419,
+							"parameters": {
+								"max_fps": "30"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "H_ButtonPlay",
+							"sid": 527114842722309,
+							"parameters": {
+								"animation": "\"click\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 119309710202762,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 742435594778735,
+							"parameters": {
+								"seconds": ".2"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 163223944628142,
+							"disabled": true,
+							"parameters": {
+								"layout": "GamePlay"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 594629693933475,
+							"parameters": {
+								"layout": "ruleta"
+							}
+						}
+					],
+					"sid": 891352329879790
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 672153005058010
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "localizacion",
+					"sid": 704997170421662
+				},
+				{
+					"id": "unload-unused-images",
+					"objectClass": "System",
+					"sid": 372865968053949
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 924043742074296,
+					"parameters": {
+						"key": "\"scoreBest\""
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 671106759610461,
+					"parameters": {
+						"key": "\"isGuide\""
+					}
+				},
+				{
+					"id": "preload",
+					"objectClass": "Audio",
+					"sid": 602012691012699,
+					"parameters": {
+						"audio-file": "musica"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 111052713803580,
+					"parameters": {
+						"reset-static": true
+					}
+				}
+			],
+			"sid": 184401405479271,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "InputDate",
+							"sid": 387614136763996,
+							"parameters": {
+								"text": "Date.ToString(Date.Now + (60 * 1000 *10))"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 804975867696500,
+							"parameters": {
+								"type": "log",
+								"message": "Date.Parse(InputDate.Text)"
+							}
+						},
+						{
+							"id": "log",
+							"objectClass": "Browser",
+							"sid": 570923717710350,
+							"parameters": {
+								"type": "log",
+								"message": "Date.Now + 5000"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 819962559163545
+						},
+						{
+							"id": "create",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 235385283111855,
+							"parameters": {
+								"tag": "\"relative\"",
+								"title": "\"BLOCKS CHALLENGE\"",
+								"text": "\"Te estamos esperando en Blocks!!!!. Juega un nuevo desafio Mundial\"",
+								"foreground": true,
+								"overwrite": false
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 846909024331344
+						},
+						{
+							"id": "trigger-relative",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 986416828937896,
+							"parameters": {
+								"tag": "\"relative\"",
+								"count": "6",
+								"unit": "hour"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 308352336304595
+						},
+						{
+							"id": "create",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 745512554194016,
+							"parameters": {
+								"tag": "\"relative\"",
+								"title": "\"BLOCKS CHALLENGE\"",
+								"text": "\"Te estamos esperando en Blocks!!!!. Juega un nuevo desafio Mundial\"",
+								"foreground": true,
+								"overwrite": false
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 691498400258111
+						},
+						{
+							"id": "trigger-relative",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 579743419658168,
+							"parameters": {
+								"tag": "\"relative\"",
+								"count": "3",
+								"unit": "day"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 426863143568383
+						},
+						{
+							"id": "create",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 466546046348302,
+							"parameters": {
+								"tag": "\"relative\"",
+								"title": "\"BLOCKS CHALLENGE\"",
+								"text": "\"Te estamos esperando en Blocks!!!!. Juega un nuevo desafio Mundial\"",
+								"foreground": true,
+								"overwrite": false
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 388427005238655
+						},
+						{
+							"id": "trigger-relative",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 911518874292971,
+							"parameters": {
+								"tag": "\"relative\"",
+								"count": "1",
+								"unit": "week"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 910749632745728
+						},
+						{
+							"id": "create",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 766856000173167,
+							"parameters": {
+								"tag": "\"relative\"",
+								"title": "\"BLOCKS CHALLENGE\"",
+								"text": "\"Te estamos esperando en Blocks!!!!. Juega un nuevo desafio Mundial\"",
+								"foreground": true,
+								"overwrite": false
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 529757186240124
+						},
+						{
+							"id": "trigger-relative",
+							"objectClass": "EasyLocalNotifications",
+							"sid": 501219868051455,
+							"parameters": {
+								"tag": "\"relative\"",
+								"count": "1",
+								"unit": "month"
+							}
+						}
+					],
+					"sid": 458634703604815
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 334519010938590,
+							"parameters": {
+								"tag": "\"BGSound\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 307988844536084,
+							"parameters": {
+								"audio-file": "musica",
+								"loop": "looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"BGSound\""
+							}
+						}
+					],
+					"sid": 657484227319560
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 447559675005378,
+					"parameters": {
+						"key": "\"scoreBest\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 410178130381365,
+					"parameters": {
+						"key": "\"scoreBest\""
+					}
+				}
+			],
+			"sid": 944224244375122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 171214461932747,
+					"parameters": {
+						"key": "\"isGuide\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "get-item",
+					"objectClass": "LocalStorage",
+					"sid": 432986950626760,
+					"parameters": {
+						"key": "\"isGuide\""
+					}
+				}
+			],
+			"sid": 891471068077383
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 988726392336843,
+					"parameters": {
+						"key": "\"scoreBest\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "DicData",
+					"sid": 922753975721220,
+					"parameters": {
+						"key": "\"scoreBest\"",
+						"value": "LocalStorage.ItemValue"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "H_TextScoreBest",
+					"sid": 163247808455521,
+					"parameters": {
+						"text": "zeropad(DicData.Get(\"scoreBest\"), 5)"
+					}
+				}
+			],
+			"sid": 158501270096874
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-get",
+					"objectClass": "LocalStorage",
+					"sid": 651385470325018,
+					"parameters": {
+						"key": "\"isGuide\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "DicData",
+					"sid": 289160318050430,
+					"parameters": {
+						"key": "\"isGuide\"",
+						"value": "LocalStorage.ItemValue"
+					}
+				}
+			],
+			"sid": 837162082866418
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 650738767644107,
+					"parameters": {
+						"key": "\"scoreBest\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "DicData",
+					"sid": 982100369762453,
+					"parameters": {
+						"key": "\"scoreBest\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "H_TextScoreBest",
+					"sid": 598517382517480,
+					"parameters": {
+						"text": "zeropad(DicData.Get(\"scoreBest\"), 5)"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 370429350739605,
+					"parameters": {
+						"key": "\"scoreBest\"",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 548935878061290
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-item-missing",
+					"objectClass": "LocalStorage",
+					"sid": 348446411671390,
+					"parameters": {
+						"key": "\"isGuide\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-key",
+					"objectClass": "DicData",
+					"sid": 602483333716673,
+					"parameters": {
+						"key": "\"isGuide\"",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 783100969454535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 204948650455519,
+					"parameters": {
+						"object": "Boton_Ajustes",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 879296903912169,
+					"parameters": {
+						"audio-file": "button",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 536102629767554,
+					"parameters": {
+						"layer": "\"settings_main\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 875828671140483,
+					"parameters": {
+						"layer": "\"settings_main\"",
+						"interactive": true
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 480930063293633,
+					"parameters": {
+						"layer": "\"Layer 0\"",
+						"interactive": false
+					}
+				}
+			],
+			"sid": 702266995816343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 748307311698987,
+					"parameters": {
+						"object": "Cerrar_SETTING",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 261620226231739,
+					"parameters": {
+						"audio-file": "button",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 484618442744329,
+					"parameters": {
+						"layer": "\"settings_main\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 795433930569087,
+					"parameters": {
+						"layer": "\"settings_main\"",
+						"interactive": false
+					}
+				},
+				{
+					"id": "set-layer-interactive",
+					"objectClass": "System",
+					"sid": 212490516684207,
+					"parameters": {
+						"layer": "\"Layer 0\"",
+						"interactive": true
+					}
+				}
+			],
+			"sid": 610903314893714
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button Audio2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 689878707218705,
+							"parameters": {
+								"object": "Boton_Musica_Activada",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-silent",
+							"objectClass": "Audio",
+							"sid": 625122218785422,
+							"parameters": {
+								"mode": "toggle-silent"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 663477638398545,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 805351537111430
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-silent",
+							"objectClass": "Audio",
+							"sid": 532154971098102
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Boton_Musica_Activada",
+							"sid": 596098360164181,
+							"parameters": {
+								"animation": "\"no_sonido\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 687485195384923
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 138499377984307
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Boton_Musica_Activada",
+							"sid": 540013280656632,
+							"parameters": {
+								"animation": "\"sonido\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 382928806209152
+				}
+			],
+			"sid": 629161004598177
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "OPCIONES_SETTING_MAIN",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 942157303073535,
+							"parameters": {
+								"object": "boton_cerrar_ranking",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 781204382758652,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 859011885807558,
+							"parameters": {
+								"layer": "\"ranking\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 793402650024040,
+							"parameters": {
+								"layer": "\"Layer 0\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 510610067478774
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 203655825870874,
+							"parameters": {
+								"object": "Boton_Ranking",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 703433931390823,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 630203163006845,
+							"parameters": {
+								"layout": "ranking"
+							}
+						}
+					],
+					"sid": 885548070214876
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 484704007139536,
+							"parameters": {
+								"object": "Text_more_games_setting",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 158111272257036,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 303370924989580,
+							"parameters": {
+								"layer": "\"more_games\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 879097320590791,
+							"parameters": {
+								"layer": "\"settings_main\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 548610217458884,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 821161555206625,
+							"parameters": {
+								"layer": "\"more_games\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 921927293251116
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 498742466187192,
+							"parameters": {
+								"object": "Cerrar_SETTING_more",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 353791745453422,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 650143620317360,
+							"parameters": {
+								"layer": "\"more_games\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 216290933593971,
+							"parameters": {
+								"layer": "\"more_games\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 525195561871962,
+							"parameters": {
+								"layer": "\"settings_main\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 233461172808148
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 822856288596684,
+							"parameters": {
+								"object": "Dirok_Masjuegos",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 443798081144568,
+							"parameters": {
+								"url": "\"https://play.google.com/store/apps/details?id=com.gamez.net\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 348718831994454
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 241039550494681,
+							"parameters": {
+								"object": "Emoji_Masjuegos",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 783237018267472,
+							"parameters": {
+								"url": "\"https://play.google.com/store/apps/details?id=com.merlugames.emojifusion\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 882532081900131
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 254508929594088,
+							"parameters": {
+								"object": "Text_privacy_policy_setting",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 574723289090937,
+							"parameters": {
+								"url": "\"https://gamez-studio.com/privacy-policy\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 751108835513323
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 629939692349048,
+							"parameters": {
+								"object": "Instagram",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Browser",
+							"sid": 256368933738253,
+							"parameters": {
+								"url": "\"https://gamez-studio.com/privacy-policy\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 106883230942420
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 839958259227434,
+							"parameters": {
+								"object": "Twitter",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 320835542627493,
+							"parameters": {
+								"url": "\"https://x.com/_gamezstudio\"",
+								"target": "self"
+							}
+						}
+					],
+					"sid": 264336923054554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 399348835151022,
+							"parameters": {
+								"object": "Boton_Tienda",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 409301074696622,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 690460315686064,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 908104438858762,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 277399031122412,
+							"parameters": {
+								"layer": "\"Layer 0\"",
+								"interactive": false
+							}
+						}
+					],
+					"sid": 877033100977874
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 338616391416570,
+							"parameters": {
+								"object": "cerrar_shop_GAMEPLAY",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 497832439018391,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 392597690527322,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 655539313121940,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 907329730361633,
+							"parameters": {
+								"layer": "\"Layer 0\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 439344512200285
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 417616927041070,
+							"parameters": {
+								"object": "CerrarPop",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 935113682823925,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 298508639384506,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 647616451174696,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 723240164789428,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 572082167829171
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 124534227239169,
+							"parameters": {
+								"object": "Item_Anuncios",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 210995942773282,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 783596696088266,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 243941129728560,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 473602485751946,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"interactive": true
+							}
+						}
+					],
+					"sid": 818580567662930
+				}
+			],
+			"sid": 785879513716691
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "IN APP PURCHASER",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signed-in",
+							"objectClass": "GooglePlay",
+							"sid": 165681158414337
+						}
+					],
+					"actions": [
+						{
+							"id": "request-player-details",
+							"objectClass": "GooglePlay",
+							"sid": 438160069843705
+						}
+					],
+					"sid": 372742823645114,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signed-out",
+							"objectClass": "GooglePlay",
+							"sid": 603037012998058
+						}
+					],
+					"actions": [
+						{
+							"id": "sign-in",
+							"objectClass": "GooglePlay",
+							"sid": 104043942772969
+						}
+					],
+					"sid": 277745276041401,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 661993282971347,
+							"parameters": {
+								"object": "Boton_Comprar",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "purchase-product",
+							"objectClass": "IAPMóvil",
+							"sid": 806392701908971,
+							"parameters": {
+								"product-id": "\"quitar_publicidad\""
+							}
+						}
+					],
+					"sid": 118288413207095,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-purchase-success",
+							"objectClass": "IAPMóvil",
+							"sid": 843119345671151,
+							"parameters": {
+								"product-id": "\"quitar_publicidad\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 632984271649555,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 684626808766969,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 656357472900815,
+							"parameters": {
+								"layer": "\"confirmar_quitar_anuncios_main\"",
+								"interactive": false
+							}
+						},
+						{
+							"id": "set-layer-interactive",
+							"objectClass": "System",
+							"sid": 487999485265317,
+							"parameters": {
+								"layer": "\"shop_main\"",
+								"interactive": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 969349748590790,
+							"parameters": {
+								"variable": "TIENE_PUBLICIDAD",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 906377970395774,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "product-owned",
+							"objectClass": "IAPMóvil",
+							"sid": 797278091562089,
+							"parameters": {
+								"product-id": "\"quitar_publicidad\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 904168117647059,
+							"parameters": {
+								"variable": "TIENE_PUBLICIDAD",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Item_Anuncios",
+							"sid": 849399430508512,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TITULO_SHOP_5",
+							"sid": 677636794172109,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DESCRIPCION_SHOP_5",
+							"sid": 447075604419301,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "PRECIO_5",
+							"sid": 759918784208881,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 312689334414932,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-loaded",
+							"objectClass": "GooglePlay",
+							"sid": 552944969273119
+						}
+					],
+					"actions": [
+						{
+							"id": "sign-in",
+							"objectClass": "GooglePlay",
+							"sid": 623113001574176
+						}
+					],
+					"sid": 423680295824188,
+					"disabled": true
+				}
+			],
+			"sid": 948508162871158
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 115902504310909,
+					"parameters": {
+						"object": "english",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 289719625404505,
+					"parameters": {
+						"variable": "idioma",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 731180109071460,
+					"parameters": {
+						"key": "\"idioma\"",
+						"value": "idioma"
+					}
+				},
+				{
+					"callFunction": "localizacion",
+					"sid": 317894905142635
+				}
+			],
+			"sid": 220784592566392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 676512512202413,
+					"parameters": {
+						"object": "castellano",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 632634358068008,
+					"parameters": {
+						"variable": "idioma",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 324931756172745,
+					"parameters": {
+						"key": "\"idioma\"",
+						"value": "idioma"
+					}
+				},
+				{
+					"callFunction": "localizacion",
+					"sid": 970910489799584
+				}
+			],
+			"sid": 266425087388621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 878154853781158
+				}
+			],
+			"actions": [
+				{
+					"id": "register-product",
+					"objectClass": "IAPMóvil",
+					"sid": 473117024775378,
+					"parameters": {
+						"product-id": "\"quitar_publicidad\"",
+						"product-type": "non-consumable"
+					}
+				},
+				{
+					"id": "complete-registration",
+					"objectClass": "IAPMóvil",
+					"sid": 930128682107588
+				},
+				{
+					"type": "script",
+					"script": "alert(\"entro\")",
+					"disabled": true
+				}
+			],
+			"sid": 161648885446831,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-registration-success",
+					"objectClass": "IAPMóvil",
+					"sid": 986424044707687
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "alert(\"se completo el registro de producto\")"
+				}
+			],
+			"sid": 625126310388005,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-registration-failure",
+					"objectClass": "IAPMóvil",
+					"sid": 660174947006341
+				}
+			],
+			"actions": [
+				{
+					"id": "complete-registration",
+					"objectClass": "IAPMóvil",
+					"sid": 764108776278192
+				},
+				{
+					"type": "script",
+					"script": "alert(\"fall9o\")"
+				}
+			],
+			"sid": 975875051314578,
+			"disabled": true
+		}
+	],
+	"sid": 282504175830370
+}

@@ -1,0 +1,61 @@
+{
+	"name": "Boton_Comprar",
+	"plugin-id": "Sprite",
+	"sid": 179707437944743,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 276,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1369814,
+						"collisionPoly": {
+							"points": [
+								0.036231884057971016,
+								0,
+								0.9782608695652174,
+								0.015625,
+								0.9891304347826086,
+								0.0625,
+								0.9963768115942029,
+								0.125,
+								0.9565217391304348,
+								1,
+								0.018115942028985508,
+								0.984375,
+								0,
+								0.890625,
+								0,
+								0.15625,
+								0.007246376811594203,
+								0.09375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 780886636667384,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

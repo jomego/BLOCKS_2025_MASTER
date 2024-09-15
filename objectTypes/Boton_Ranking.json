@@ -1,0 +1,59 @@
+{
+	"name": "Boton_Ranking",
+	"plugin-id": "Sprite",
+	"sid": 253963609950436,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 321,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7404076,
+						"collisionPoly": {
+							"points": [
+								0.0529595015576324,
+								0,
+								0.9937694704049844,
+								0.1,
+								1,
+								0.15,
+								0.9937694704049844,
+								0.8625,
+								0.9688473520249221,
+								0.95,
+								0.07476635514018691,
+								0.975,
+								0,
+								0.2625,
+								0.009345794392523364,
+								0.1875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 187339635097423,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

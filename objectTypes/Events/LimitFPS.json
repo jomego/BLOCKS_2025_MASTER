@@ -1,0 +1,14 @@
+{
+	"name": "LimitFPS",
+	"plugin-id": "skymen_limit_fps",
+	"sid": 214478635763725,
+	"singleglobal-inst": {
+		"type": "LimitFPS",
+		"properties": {
+			"max_fps": 30
+		},
+		"uid": 278,
+		"sid": 293593611366305,
+		"tags": ""
+	}
+}

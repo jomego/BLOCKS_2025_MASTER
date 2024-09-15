@@ -1,0 +1,14 @@
+{
+	"name": "Text_titulo_ruleta",
+	"plugin-id": "Text",
+	"sid": 914506988446326,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "pulse",
+			"name": "Pulso"
+		}
+	]
+}

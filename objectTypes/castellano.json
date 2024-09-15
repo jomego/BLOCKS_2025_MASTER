@@ -1,0 +1,59 @@
+{
+	"name": "castellano",
+	"plugin-id": "Sprite",
+	"sid": 963684199816956,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 45,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8146229,
+						"collisionPoly": {
+							"points": [
+								0.4666666666666667,
+								0,
+								0.5333333333333333,
+								0,
+								0.9777777777777777,
+								0.24,
+								0.9555555555555556,
+								0.78,
+								0.5333333333333333,
+								1,
+								0.4666666666666667,
+								1,
+								0.022222222222222223,
+								0.76,
+								0.044444444444444446,
+								0.22
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 424883609057036,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

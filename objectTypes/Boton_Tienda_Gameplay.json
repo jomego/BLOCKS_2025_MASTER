@@ -1,0 +1,59 @@
+{
+	"name": "Boton_Tienda_Gameplay",
+	"plugin-id": "Sprite",
+	"sid": 578772190721783,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 94,
+						"height": 71,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4459999,
+						"collisionPoly": {
+							"points": [
+								0.010638297872340425,
+								0,
+								0.7340425531914894,
+								0,
+								0.925531914893617,
+								0.14084507042253522,
+								0.9680851063829787,
+								0.19718309859154928,
+								0.9893617021276596,
+								0.2535211267605634,
+								1,
+								0.29577464788732394,
+								0.9893617021276596,
+								1,
+								0,
+								0.9859154929577465
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 905446822461214,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

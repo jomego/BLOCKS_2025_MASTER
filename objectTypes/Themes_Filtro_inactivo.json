@@ -1,0 +1,51 @@
+{
+	"name": "Themes_Filtro_inactivo",
+	"plugin-id": "Sprite",
+	"sid": 194374096815904,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 178,
+						"height": 55,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9647634,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.10909090909090909,
+								0.9943820224719101,
+								0.8909090909090909,
+								0,
+								0.8909090909090909,
+								0,
+								0.12727272727272726
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 469192979521366,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,1003 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 40602,
+	"name": "Blocks Challenge+",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Matriz",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Navegador",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "CORDOVAIAP",
+			"name": "IAP Móvil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Date",
+			"name": "Fecha",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Diccionario",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Teclado",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Almacenamiento local",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "MixonGames_EasyLocalNotifications",
+			"name": "[Easy Local Notifications]",
+			"author": "Mixon Games",
+			"bundled": true,
+			"version": "1.0.0.3"
+		},
+		{
+			"type": "plugin",
+			"id": "Share",
+			"name": "Compartir",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseAuth",
+			"name": "[FirebaseV9 Auth Basic]",
+			"author": "Sparsha",
+			"bundled": false,
+			"version": "7.5.0"
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseRealtimeDatabase",
+			"name": "[FirebaseV9 RD Basic]",
+			"author": "Sparsha",
+			"bundled": false,
+			"version": "9.1.3"
+		},
+		{
+			"type": "plugin",
+			"id": "Sparsha_FirebaseSDK",
+			"name": "[FirebaseV9 SDK]",
+			"author": "Sparsha",
+			"bundled": false,
+			"version": "10.4.2"
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Fuente Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Entrada de texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Controlador de la línea de tiempo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Control táctil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "advert",
+			"name": "Anuncio en móvil",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "googleplay",
+			"name": "Google Play",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "skymen_limit_fps",
+			"name": "[Limit FPS]",
+			"author": "skymen",
+			"bundled": true,
+			"version": "1.0.0.6"
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Vídeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Ancla",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Desvanecer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Girar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween (interpolación)",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blacknwhite",
+			"name": "Blanco y negro",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulso",
+			"author": "Danguafer/Silexars",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Establecer color",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "[Better Outline]",
+			"author": "skymen",
+			"bundled": true,
+			"version": "2.0.0.3"
+		},
+		{
+			"type": "effect",
+			"id": "subtract",
+			"name": "Restar",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "mfpo5kmdvk5",
+	"objectTypes": {
+		"items": [
+			"GL_PointerGuide",
+			"Texto",
+			"Texto2",
+			"barra",
+			"barra2",
+			"SL",
+			"Sprite",
+			"puntos",
+			"FONDO",
+			"BlocksCHALLENGE",
+			"PLAY",
+			"FONDO2",
+			"degradado",
+			"degradado2",
+			"degradado3",
+			"degradado4",
+			"more_games",
+			"EntradaDeTexto",
+			"Texto3",
+			"MoreGames",
+			"MoreGames2",
+			"BlocksCHALLENGE2",
+			"LogoSinFondo_Blocks",
+			"merlu_color",
+			"Boton_Ranking",
+			"Boton_Tienda",
+			"Boton_Ajustes",
+			"Boton_Personalizar",
+			"Texto_play",
+			"Texto_shop",
+			"Texto_Ranking",
+			"Boton_Ranking_Gameplay",
+			"Boton_Ajustes_Gameplay",
+			"Boton_Tienda_Gameplay",
+			"Boton_Boosters",
+			"Ventana_Ajustes",
+			"Instagram",
+			"Twitter",
+			"Texto7",
+			"Boton_Sonido_Activado",
+			"Boton_Musica_Activada",
+			"Cerrar_SETTING",
+			"Text_setting",
+			"Sprite2",
+			"Text_more_games_setting",
+			"Flecha",
+			"Text_privacy_policy_setting",
+			"Flecha2",
+			"Fondo_Ranking",
+			"Ventana_Ranking",
+			"Casilla_Ranking_Oro",
+			"Casilla_Ranking_Plata",
+			"Casilla_Ranking_Bronce",
+			"Casilla_Ranking",
+			"Casilla_Ranking2",
+			"Casilla_Ranking3",
+			"Casilla_Ranking4",
+			"Casilla_Ranking5",
+			"TEXTO_RANKING_CERRAR",
+			"boton_cerrar_ranking",
+			"Ventana_Ajustes2",
+			"Dirok_Masjuegos",
+			"Emoji_Masjuegos",
+			"Cerrar_SETTING_more",
+			"Fondo_tienda",
+			"Ventana_Tienda",
+			"Cerrar_Tienda",
+			"Item_b1",
+			"Item_b3",
+			"Item_b5",
+			"Item_b6",
+			"Item_Anuncios",
+			"cerrar_shop_GAMEPLAY",
+			"TITULO_SHOP_1",
+			"TITULO_SHOP_2",
+			"TITULO_SHOP_3",
+			"TITULO_SHOP_4",
+			"TITULO_SHOP_5",
+			"DESCRIPCION_SHOP_1",
+			"DESCRIPCION_SHOP_2",
+			"DESCRIPCION_SHOP_3",
+			"DESCRIPCION_SHOP_4",
+			"DESCRIPCION_SHOP_5",
+			"booster_filtro_activo",
+			"Themes_Filtro_inactivo",
+			"PRECIO_1",
+			"PRECIO_2",
+			"PRECIO_3",
+			"PRECIO_4",
+			"PRECIO_5",
+			"Ventana_Pop",
+			"CerrarPop",
+			"Confirmar_anuncios",
+			"Boton_Comprar",
+			"Sprite3",
+			"Ventana_Precio",
+			"text_descripcion_comprar_quitar_publi",
+			"text_precio_comprar_quitar_publi2",
+			"text_COMPRAR",
+			"Text_CONFIRMAR_COMPRA",
+			"LBName",
+			"LBScore",
+			"LBGems",
+			"MyRank",
+			"MyName",
+			"LBbackColor",
+			"Write",
+			"In_Name",
+			"In_Score",
+			"In_Gems",
+			"GoogleSignIn",
+			"AuthStatus",
+			"InputName",
+			"InputScore",
+			"InputGems",
+			"Send1",
+			"checkbox",
+			"TextCurrentName",
+			"TextCurrentRank",
+			"TextCurrentScore",
+			"TextCurrentGems",
+			"Name",
+			"Score",
+			"Gems",
+			"highlight",
+			"orden_1",
+			"orden_2",
+			"orden_3",
+			"orden_4",
+			"orden_5",
+			"orden_6",
+			"orden_7",
+			"orden_8",
+			"Texto9",
+			"Texto_Loading",
+			"InputDate",
+			"or",
+			"castellano",
+			"english",
+			"Text_lenguaje",
+			"Text_moregames2",
+			"GameOver",
+			"Text_CONFIRMAR_SALIR_PARTIDA",
+			"Text_CONFIRMACION_EXPLICACION",
+			"Text_ACEPTAR",
+			"CerrarPop2",
+			"Boton_Cerrar_Salir",
+			"Text_titulo_ruleta",
+			"Casillas_Ruleta",
+			"BordeRuleta",
+			"Centro",
+			"Cerrar_Ruleta",
+			"Boton_Lanzar_Ruleta",
+			"Text_lanzar_ruleta",
+			"ANIMACION1",
+			"ANIMACION2",
+			"Premio",
+			"Text_titulo_premio_ruleta",
+			"Text_descripcion_premio_ruleta",
+			"ANIMACION3",
+			"Teclado",
+			"Text_BOOSTER_TITULO",
+			"Booster_1",
+			"Booster_5",
+			"Booster_6",
+			"Booster_3",
+			"CerrarPop3",
+			"NUM_B5",
+			"NUM_B6",
+			"NUM_B3",
+			"NUM_B1",
+			"Boton_Boosters_ACTIVO",
+			"Text_UNIDADES_BOOSTERS",
+			"Sprite4",
+			"Text_seleccionar_ficha_1_6",
+			"CerrarPop4",
+			"Blocks_portada_",
+			"portada_transparencia",
+			"video",
+			"Sprite5",
+			"MerluSinFondo",
+			"ver"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Array_DiceShowMatch",
+					"Array_Random",
+					"Array_Rotate",
+					"Array_RotateValid",
+					"ArrayFindDiceMatch",
+					"DicData"
+				],
+				"subfolders": [],
+				"name": "Data"
+			},
+			{
+				"items": [
+					"GL_BGBar",
+					"GL_ButtonAudio",
+					"GL_ButtonGoHome",
+					"GL_ButtonRestart",
+					"giro_derecha",
+					"giro_1",
+					"GL_ButtonSetting",
+					"GL_CollisonBomb",
+					"GL_Combo",
+					"GL_ComboTimeline",
+					"GL_DestroyDiceGroup",
+					"GL_Dice",
+					"GL_DiceDragChild",
+					"GL_DiceDragGroupTemp1",
+					"GL_DiceDragGroupTemp2",
+					"GL_DiceDragGroupTemp3",
+					"GL_DiceEffectFade",
+					"GL_DiceMatchTimeline",
+					"GL_DiceMergeTimeline",
+					"GL_DiceSuggestion",
+					"GL_Explosion",
+					"GL_GroupDragCheckCollision",
+					"GL_Hexagon",
+					"GL_HexagonGroupDragCheck",
+					"GL_IconCup",
+					"GL_LabelScore",
+					"GL_Score",
+					"GL_ScoreTimeline",
+					"GL_SetDiceDrag",
+					"GL_Sticker",
+					"GL_TextScore",
+					"GL_TextScoreBest",
+					"GIRAR",
+					"giro_derecha2",
+					"GIRAR2",
+					"Send",
+					"GL_ButtonGoHome2",
+					"GL_Explosion2",
+					"N1",
+					"N2",
+					"N3",
+					"N4",
+					"N5",
+					"N6"
+				],
+				"subfolders": [],
+				"name": "GamePlay"
+			},
+			{
+				"items": [
+					"Audio",
+					"LocalStorage",
+					"TimelineController",
+					"Touch",
+					"Browser",
+					"AnuncioEnMóvil",
+					"LimitFPS",
+					"IAPMóvil",
+					"GooglePlay",
+					"EasyLocalNotifications",
+					"AJAX",
+					"Compartir",
+					"Date"
+				],
+				"subfolders": [],
+				"name": "Events"
+			},
+			{
+				"items": [
+					"GO_BG",
+					"GO_Container",
+					"GO_TextScoreBest",
+					"GO_Title",
+					"GO_Descreption"
+				],
+				"subfolders": [],
+				"name": "GameOver"
+			},
+			{
+				"items": [
+					"H_ButtonPlay",
+					"H_TextScoreBest",
+					"H_title"
+				],
+				"subfolders": [],
+				"name": "Home"
+			},
+			{
+				"items": [
+					"FirebaseV9AuthBasic",
+					"FirebaseV9SDK",
+					"FirebaseRDBasic"
+				],
+				"subfolders": [],
+				"name": "Firebase"
+			},
+			{
+				"items": [
+					"localizacion"
+				],
+				"subfolders": [],
+				"name": "Array"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"GL_DiceDragGroupTemplateFamily"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"GamePlay",
+			"Home",
+			"carga",
+			"ranking",
+			"ruleta"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"GamePlayEvent",
+			"HomeEvent",
+			"carga_event",
+			"rankingEvent",
+			"ruleta_e"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "merge1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 289055795006130,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "merge2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 179278746050819,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "merge3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 623346210979953,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "merge4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 890008321037680,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "merge5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 469512426888186,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "merge6.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 470119314335514,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "place.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 858983277972094,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "combo_amazing.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 575663609966988,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "combo_bravo.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 577342371164456,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "combo_cool.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 489180802786874,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "combo_nice.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 909075774946019,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "combo_unbeli.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 666535769839548,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "tap.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 565538396849173,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "rotate1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 240554730747372,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "rotate2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 939379483434377,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "rotate3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 684141068639762,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "rotate4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 626694443051706,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "rotate5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 476528845832591,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "goBack.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 551414570336321,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 886625644536974,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gameover.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 422325392951059,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BGSound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 417252345858324,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bomb.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 242344423184521,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "musica.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 178692503913657,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ruleta.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 972995118737504,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [
+				{
+					"name": "intro_logo.webm",
+					"type": "video/webm",
+					"sid": 194508012804409,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "intro_logo.mp4",
+					"type": "video/mp4",
+					"sid": 329671427983188,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "BebasNeue-Regular.ttf",
+					"type": "application/font-sfnt",
+					"sid": 441556705460298,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Fredoka-Medium.ttf",
+					"type": "application/font-sfnt",
+					"sid": 374213290340106,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Fredoka-Bold.ttf",
+					"type": "application/font-sfnt",
+					"sid": 228238371225059,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bevellier-Bold.otf",
+					"type": "application/font-sfnt",
+					"sid": 488564222305920,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bevellier-BoldItalic.otf",
+					"type": "application/font-sfnt",
+					"sid": 303773902044920,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bevellier-Medium.otf",
+					"type": "application/font-sfnt",
+					"sid": 608085744824806,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bevellier-Semibold.otf",
+					"type": "application/font-sfnt",
+					"sid": 532497169998694,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bevellier-Italic.otf",
+					"type": "application/font-sfnt",
+					"sid": 879591067287890,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "ic_launcher.png",
+					"type": "image/png",
+					"sid": 643264287340549,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "archivo.css",
+					"type": "text/css",
+					"sid": 690279106742024,
+					"file-info": {
+						"purpose": "stylesheet"
+					}
+				},
+				{
+					"name": "Localizacion_UI.json",
+					"type": "application/json",
+					"sid": 314505005404569,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"GL_ComboTimeline",
+			"GL_DiceMatchTimeline",
+			"GL_DiceMergeTimeline",
+			"GL_HammerTimeline",
+			"GL_IconGoldTimeline",
+			"GL_ScoreTimeline"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "Juego matematico de reflejos y habilidad.",
+		"version": "1.0.2",
+		"author": "jomego",
+		"authorEmail": "info@gamez-studio.com",
+		"authorWebsite": "https://gamez-studio.com",
+		"appId": "com.merlugames.blockschallengeplus",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			0.5490196078431373,
+			0.5490196078431373,
+			0.5490196078431373,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "default",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 1024,
+		"loaderStyle": "progress",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 720,
+	"viewportHeight": 1280,
+	"firstLayout": "carga"
+}

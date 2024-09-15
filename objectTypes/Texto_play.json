@@ -1,0 +1,14 @@
+{
+	"name": "Texto_play",
+	"plugin-id": "Text",
+	"sid": 460727857642817,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	]
+}

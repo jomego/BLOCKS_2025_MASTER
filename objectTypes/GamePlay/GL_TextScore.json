@@ -1,0 +1,33 @@
+{
+	"name": "GL_TextScore",
+	"plugin-id": "Spritefont2",
+	"sid": 695116251299360,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 930713935856112
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "blacknwhite",
+			"name": "BlancoYNegro"
+		}
+	],
+	"image": {
+		"width": 512,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 4117717,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

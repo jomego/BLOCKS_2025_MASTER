@@ -1,0 +1,33 @@
+{
+	"name": "GL_Score",
+	"plugin-id": "Spritefont2",
+	"sid": 424016872306834,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 878175958329799
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 797308263330003
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 512,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5401820,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

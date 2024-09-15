@@ -1,0 +1,66 @@
+{
+	"name": "barra2",
+	"plugin-id": "Sprite",
+	"sid": 374261394783229,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Ancla",
+			"sid": 531835627497599
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "blacknwhite",
+			"name": "BlancoYNegro"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 480,
+						"height": 187,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4517038,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.9573645663799109,
+								0,
+								0.9201639153685186,
+								0.0639815521666145,
+								0,
+								0.5383544106536632,
+								0,
+								0.8905833594703941,
+								0,
+								0.9686986505386207,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 469356017487240,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 24
+			}
+		],
+		"subfolders": []
+	}
+}

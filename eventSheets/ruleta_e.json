@@ -1,0 +1,2671 @@
+{
+	"name": "ruleta_e",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "FREE_OBTENIDO",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 858478975320662
+		},
+		{
+			"eventType": "variable",
+			"name": "DIA2",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 349248738985490
+		},
+		{
+			"eventType": "variable",
+			"name": "DIA",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 809863099763967
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 971473132410603
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 156790727978130,
+					"parameters": {
+						"variable": "DIA2",
+						"value": "Date.GetDate(Date.Now)"
+					}
+				},
+				{
+					"id": "check-item-exists",
+					"objectClass": "LocalStorage",
+					"sid": 118727109098892,
+					"parameters": {
+						"key": "\"FREE_DIA\""
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 777131382046363
+				}
+			],
+			"sid": 152313539621166
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "RULETA2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 342741567184570,
+							"parameters": {
+								"object": "Boton_Lanzar_Ruleta",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 402895647111668,
+							"parameters": {
+								"key": "\"FREE_DIA\"",
+								"value": "DIA2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Cerrar_Ruleta",
+							"sid": 299965378846779
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 155310213418712,
+							"parameters": {
+								"audio-file": "button",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 389057236173221,
+							"parameters": {
+								"variable": "PREMIO_RULETA",
+								"value": "int(random(1,7))"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 604583823152527,
+							"disabled": true,
+							"parameters": {
+								"variable": "PREMIO_RULETA",
+								"value": "6"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 469726730494688,
+							"parameters": {
+								"variable": "RULETA_DIARIA_JUGADA",
+								"value": "1"
+							}
+						},
+						{
+							"id": "vibrate",
+							"objectClass": "Browser",
+							"sid": 574785306038414,
+							"parameters": {
+								"pattern": "\"200,100,200\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 248677571570326,
+							"parameters": {
+								"variable": "VIENE_DE",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 301403549892156,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 405319774481059,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 665752188704406
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 714796840334666,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "PASAR TURNO"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 838043641558154,
+									"parameters": {
+										"degrees": "25"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 952119470366947,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 438190539848089
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 879528611099998
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 371321173124027,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 321064933343938,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"1\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 723644007800562,
+									"parameters": {
+										"variable": "B1",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 522824054994785,
+									"parameters": {
+										"key": "\"B1\"",
+										"value": "B1"
+									}
+								}
+							],
+							"sid": 981738119423287
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 194361308949370,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 921846207235341
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 944086571436170,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "CALABERA"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 224600397041330,
+									"parameters": {
+										"degrees": "-25"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 841125060550624,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 241055122746349
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 165687625871215
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 921466181556797,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 928818062252693,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"2\""
+									}
+								}
+							],
+							"sid": 550395031353978
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 773175930547984,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 119822790137647
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 635346019145222,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "BOMBA"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 603860918788836,
+									"parameters": {
+										"degrees": "-85"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 486746313355011,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 491800737139475
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 937415934235421
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 263632018002737,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 632577280883051,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"3\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 188417000440620,
+									"parameters": {
+										"variable": "B3",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 505619633616452,
+									"parameters": {
+										"key": "\"B3\"",
+										"value": "B3"
+									}
+								}
+							],
+							"sid": 263760809819385
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 467388422097160,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 379711350512591
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 918663609719978,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "CALABERA"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 542804091171732,
+									"parameters": {
+										"degrees": "-25"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 288700994811331,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 177147384215328
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 221814917451793
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 985610558500345,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 244835737889435,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"4\""
+									}
+								}
+							],
+							"sid": 960521322286197
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 157902326825104,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 621949239917467
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 161800458328255,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "CAMBIO DE OIRDEN"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 487131281181996,
+									"parameters": {
+										"degrees": "75"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 634443556620603,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 412023373792256
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 817007099276355
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 729888434771282,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 778654977507607,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"5\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 663703253831475,
+									"parameters": {
+										"variable": "B5",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 594206456802936,
+									"parameters": {
+										"key": "\"B5\"",
+										"value": "B5"
+									}
+								}
+							],
+							"sid": 491719092552502
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 436413125593590,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 966595229474438
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 844848531686212,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "1-6"
+								},
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 223269571926671,
+									"parameters": {
+										"degrees": "135"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 623166159970431,
+									"parameters": {
+										"variable": "MOVER_RULETA",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Boton_Lanzar_Ruleta",
+									"sid": 708710217915696
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Text_lanzar_ruleta",
+									"sid": 789904086934509
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 152530124708522,
+									"parameters": {
+										"audio-file": "ruleta",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ruleta\""
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 635614460380640,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "\"6\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 296183129113593,
+									"parameters": {
+										"variable": "B6",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 493413707173282,
+									"parameters": {
+										"key": "\"B6\"",
+										"value": "B6"
+									}
+								}
+							],
+							"sid": 190737088867164
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 991436800184561,
+							"parameters": {
+								"variable": "MOVER_RULETA",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "rotate-clockwise",
+							"objectClass": "Casillas_Ruleta",
+							"sid": 246906114352378,
+							"parameters": {
+								"degrees": "15"
+							}
+						},
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "Centro",
+							"sid": 901941499055521,
+							"parameters": {
+								"degrees": "2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 854012124813684,
+							"parameters": {
+								"variable": "GRADOS_RULETA",
+								"value": "int(Casillas_Ruleta.Angle)"
+							}
+						}
+					],
+					"sid": 525574602065444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 433425654396631,
+							"parameters": {
+								"tag": "\"ruleta\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 395022557985976,
+							"disabled": true,
+							"parameters": {
+								"variable": "MOVER_RULETA",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 696885604766069,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Premio",
+									"sid": 978127593300022,
+									"parameters": {
+										"frame-number": "PREMIO_RULETA"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Premio",
+									"sid": 985652286628827,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Text_titulo_premio_ruleta",
+									"sid": 211488742992939,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Text_descripcion_premio_ruleta",
+									"sid": 318633163291667,
+									"parameters": {
+										"opacity": "100"
+									}
+								},
+								{
+									"id": "signal",
+									"objectClass": "System",
+									"sid": 472627151860785,
+									"parameters": {
+										"tag": "\"fin_ruleta\""
+									}
+								}
+							],
+							"sid": 273835179806596
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-signal",
+							"objectClass": "System",
+							"sid": 621705261129599,
+							"parameters": {
+								"tag": "\"fin_ruleta\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 998307495921812,
+							"parameters": {
+								"variable": "MOVER_RULETA",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 438576460641037,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 886088599828210
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 700703152939153,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-clockwise",
+									"objectClass": "Casillas_Ruleta",
+									"sid": 441620165564314,
+									"disabled": true,
+									"parameters": {
+										"degrees": "90"
+									}
+								}
+							],
+							"sid": 239913111060026,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 590001287542698,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "30"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 381088375373175,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "35"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 175026178859556,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 503118614688439,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 959769891854315,
+											"parameters": {
+												"text": "localizacion.At(15, idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 169835755465718,
+											"parameters": {
+												"text": "localizacion.At(16,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 446612534124815,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 802155290018849,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 127485955869721,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 918951201345798,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 502425238360086,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 863864909464392
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 941408855483131
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 823659252932940,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 312806818274824,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 536744002028206,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 829970103337545,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 962439060166410
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 410474122149488
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 665834570225763,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 764382603454946,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 474134322229059,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "330"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 340707527741935,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "335"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 180824136288510,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 215515540526331,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 652368926690649,
+											"parameters": {
+												"text": "localizacion.At(29,idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 666891237777451,
+											"parameters": {
+												"text": "localizacion.At(30,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 196906218156950,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 728451506265793,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 659431024287691,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 877005465758119,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 557976405787927,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 328276245410057
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 234766882900337
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 686521751996807,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 484936226765058,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 293653083231816,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 705208506905738,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 348578391803311
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 624728631723576
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 876683599237494,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 906113689018725,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 526864024025578,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "270"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 547394258574445,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "275"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 237650969212142,
+											"parameters": {
+												"color": "rgbEx(0,0,0)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 893036308042421,
+											"parameters": {
+												"color": "rgbEx(0,0,0)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 260035815618282,
+											"parameters": {
+												"text": "localizacion.At(13,idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 533356975943826,
+											"parameters": {
+												"text": "localizacion.At(14,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 183427736703816,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 865574405089715,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 863069142621149,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 178825423984430,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 612209188190744,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 544198988694274
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 173848242487265
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 949523583680412,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 843743455327108,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 696331981854952,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 802592792588564,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 691271015457393
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 309963264772419
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 702090139218774,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 549503828254902,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 205410626172404,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "210"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 820837126130184,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "215"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 601103951719919,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 636989821746413,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 178149977212327,
+											"parameters": {
+												"text": "localizacion.At(29,idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 451165762554192,
+											"parameters": {
+												"text": "localizacion.At(30,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 373260412684962,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 675560404103379,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 880046232046595,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 662659056836990,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 119608417087753,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 222195126996315
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 548603590154551
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 831776646271551,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 446518279425312,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 482078608773748,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 944111029786297,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 712366358802816
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 596606586690246
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 478934515832756,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "5"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 131621274610851,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 177505301455600,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "150"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 305397984527798,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "155"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 778176431496916,
+											"parameters": {
+												"color": "rgbEx(0,0,0)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 987662607736070,
+											"parameters": {
+												"color": "rgbEx(0,0,0)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 632922762534975,
+											"parameters": {
+												"text": "localizacion.At(11,idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 745491250960674,
+											"parameters": {
+												"text": "localizacion.At(12,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 177465159767893,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 677890757354920,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 334585877538548,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 258672567482484,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 632505573620783,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 851495022794823
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 552061164964499
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 953844265878370,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 593933779086337,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 183366355848788,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 368923866277539,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 226623404098683
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 847393318468752
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 316845549851819,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 541341284294767,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 907223075121001,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 4,
+												"value": "90"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 705246827082435,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"comparison": 2,
+												"value": "95"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 832143372351515,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 242383908181759,
+											"parameters": {
+												"color": "rgbEx(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_titulo_premio_ruleta",
+											"sid": 103207975156085,
+											"parameters": {
+												"text": "localizacion.At(9,idioma)"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "Text_descripcion_premio_ruleta",
+											"sid": 341798709426737,
+											"parameters": {
+												"text": "localizacion.At(10,idioma)"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 587769371037848,
+											"parameters": {
+												"variable": "PREMIO_RULETA",
+												"value": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 498017261865002,
+											"parameters": {
+												"seconds": "3"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 179025975474881,
+											"parameters": {
+												"audio-file": "button",
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 592685240246301,
+											"parameters": {
+												"variable": "RULETA_DIARIA_JUGADA",
+												"value": "1"
+											}
+										},
+										{
+											"id": "go-to-layout",
+											"objectClass": "System",
+											"sid": 603722531584931,
+											"parameters": {
+												"layout": "GamePlay"
+											}
+										}
+									],
+									"sid": 473852369453969
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 884403309273928
+										}
+									],
+									"actions": [
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "Casillas_Ruleta",
+											"sid": 128357432391444,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "rotate-counter-clockwise",
+											"objectClass": "Centro",
+											"sid": 645695566495590,
+											"parameters": {
+												"degrees": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 962340302527310,
+											"parameters": {
+												"variable": "GRADOS_RULETA",
+												"value": "int(Casillas_Ruleta.Angle)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 422460474805243,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 951407381282561
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 618811779578207,
+							"parameters": {
+								"object": "Cerrar_Ruleta",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 630498476266027,
+							"parameters": {
+								"variable": "RULETA_DIARIA_JUGADA",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Text_titulo_premio_ruleta",
+							"sid": 738759190431053,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Text_descripcion_premio_ruleta",
+							"sid": 413947422700270,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 229249545185376,
+							"parameters": {
+								"layout": "GamePlay"
+							}
+						}
+					],
+					"sid": 197560886357567
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 121463534407570,
+							"parameters": {
+								"variable": "RULETA_DIARIA_JUGADA",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 498293298736668
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "Text_titulo_premio_ruleta",
+							"sid": 180613063192266,
+							"parameters": {
+								"opacity": "0"
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "Text_descripcion_premio_ruleta",
+							"sid": 946295760204557,
+							"parameters": {
+								"opacity": "0"
+							}
+						}
+					],
+					"sid": 719772490341690
+				}
+			],
+			"sid": 343699759332813
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "OBTENER FECHA DEL DIA PARA COMPROBACIONES",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 427484429079799,
+							"parameters": {
+								"key": "\"FREE_DIA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 822636330401115,
+							"parameters": {
+								"key": "\"FREE_DIA\""
+							}
+						}
+					],
+					"sid": 202646552714248
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 846886315007426,
+							"parameters": {
+								"key": "\"FREE_DIA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 460052354212082,
+							"parameters": {
+								"variable": "DIA",
+								"value": "LocalStorage.ItemValue"
+							}
+						}
+					],
+					"sid": 634349230647774,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 636677339836605,
+									"parameters": {
+										"variable": "DIA2",
+										"comparison": 1,
+										"value": "DIA"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 798825255971666,
+									"parameters": {
+										"key": "\"FREE_OBTENIDO\"",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 941422601888728
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 210895602386821
+								}
+							],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 254844479563044,
+									"parameters": {
+										"key": "\"FREE_DIA\"",
+										"value": "DIA2"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 684519947723091,
+									"disabled": true,
+									"parameters": {
+										"layout": "GamePlay"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 305271607240332,
+									"parameters": {
+										"variable": "VIENE_DE",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 844453901969215
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 492604485290465,
+							"parameters": {
+								"key": "\"FREE_DIA\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 335529636723841,
+							"parameters": {
+								"key": "\"FREE_DIA\"",
+								"value": "DIA2"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 641696073174419,
+							"parameters": {
+								"key": "\"FREE_OBTENIDO\"",
+								"value": "0"
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 638377191543096,
+							"parameters": {
+								"key": "\"FREE_DIA\""
+							}
+						}
+					],
+					"sid": 511666480396906
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 252217942291043,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 390940377539857,
+							"parameters": {
+								"key": "\"FREE_DIA\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 719344556524521
+				}
+			],
+			"sid": 122002357441341
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "COMPROBACIONES DE BOOSTERS EN LOCALHOST",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 502969561290275
+						}
+					],
+					"actions": [
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 549881763185029,
+							"parameters": {
+								"key": "\"B1\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 947560413030224,
+							"parameters": {
+								"key": "\"B3\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 973095005474529,
+							"parameters": {
+								"key": "\"B5\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 689772951600496,
+							"parameters": {
+								"key": "\"B6\""
+							}
+						}
+					],
+					"sid": 546694843060286
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 669916101008248,
+							"parameters": {
+								"key": "\"B1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 817383686049219,
+							"parameters": {
+								"key": "\"B1\""
+							}
+						}
+					],
+					"sid": 334250418116247
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 387019761806007,
+							"parameters": {
+								"key": "\"B1\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 735495806511493,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 745032342300883,
+									"disabled": true,
+									"parameters": {
+										"key": "\"B1\"",
+										"value": "LocalStorage.ItemValue+1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 950551031834060,
+									"parameters": {
+										"variable": "B1",
+										"value": "LocalStorage.ItemValue"
+									}
+								}
+							],
+							"sid": 189899627265246
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 222151163613326,
+							"parameters": {
+								"key": "\"B1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 800925101572564,
+							"parameters": {
+								"key": "\"B1\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 788770419576773
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 884422616013752,
+							"parameters": {
+								"key": "\"B3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 437139853158003,
+							"parameters": {
+								"key": "\"B3\""
+							}
+						}
+					],
+					"sid": 264023234893812
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 603913274320763,
+							"parameters": {
+								"key": "\"B3\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 696859142136623,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 966435721999802,
+									"disabled": true,
+									"parameters": {
+										"key": "\"B3\"",
+										"value": "LocalStorage.ItemValue+1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 693944955133526,
+									"parameters": {
+										"variable": "B3",
+										"value": "LocalStorage.ItemValue"
+									}
+								}
+							],
+							"sid": 752813857854213
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 557364994172655,
+							"parameters": {
+								"key": "\"B3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 542212867723483,
+							"parameters": {
+								"key": "\"B3\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 919328518845593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 282544753803857,
+							"parameters": {
+								"key": "\"B5\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 354747090974537,
+							"parameters": {
+								"key": "\"B5\""
+							}
+						}
+					],
+					"sid": 611911934266973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 260529727886465,
+							"parameters": {
+								"key": "\"B5\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 408538747382392,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 468386293054869,
+									"disabled": true,
+									"parameters": {
+										"key": "\"B5\"",
+										"value": "LocalStorage.ItemValue+1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 231047897335342,
+									"parameters": {
+										"variable": "B5",
+										"value": "LocalStorage.ItemValue"
+									}
+								}
+							],
+							"sid": 869924745201880
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 704108789390017,
+							"parameters": {
+								"key": "\"B5\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 772912076884627,
+							"parameters": {
+								"key": "\"B5\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 469994922610902
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 674077262615022,
+							"parameters": {
+								"key": "\"B6\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 261714766441455,
+							"parameters": {
+								"key": "\"B6\""
+							}
+						}
+					],
+					"sid": 217517617227882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 600471139884063,
+							"parameters": {
+								"key": "\"B6\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 547878536190140,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-item",
+									"objectClass": "LocalStorage",
+									"sid": 127567526568968,
+									"disabled": true,
+									"parameters": {
+										"key": "\"B3\"",
+										"value": "LocalStorage.ItemValue+1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 631462634927175,
+									"parameters": {
+										"variable": "B6",
+										"value": "LocalStorage.ItemValue"
+									}
+								}
+							],
+							"sid": 801504064017557
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-missing",
+							"objectClass": "LocalStorage",
+							"sid": 310984709010127,
+							"parameters": {
+								"key": "\"B6\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 493203036732816,
+							"parameters": {
+								"key": "\"B6\"",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 745386568957565
+				}
+			],
+			"sid": 851320665044807
+		}
+	],
+	"sid": 181738862424573
+}

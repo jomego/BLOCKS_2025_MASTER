@@ -1,0 +1,22 @@
+{
+	"name": "GIRAR2",
+	"plugin-id": "Spritefont2",
+	"sid": 488765361483701,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1024,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 1378820,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

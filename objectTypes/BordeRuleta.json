@@ -1,0 +1,70 @@
+{
+	"name": "BordeRuleta",
+	"plugin-id": "Sprite",
+	"sid": 661595047047078,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 416,
+						"height": 415,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8900007,
+						"collisionPoly": {
+							"points": [
+								0.49759615384615385,
+								0.033734939759036145,
+								0.8076923076923077,
+								0.15180722891566265,
+								0.8485576923076923,
+								0.1927710843373494,
+								0.9615384615384616,
+								0.4506024096385542,
+								0.9615384615384616,
+								0.5493975903614458,
+								0.5360576923076923,
+								0.963855421686747,
+								0.46634615384615385,
+								0.963855421686747,
+								0.19471153846153846,
+								0.8506024096385543,
+								0.15384615384615385,
+								0.8096385542168675,
+								0.038461538461538464,
+								0.46987951807228917
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Punto imagen 1",
+								"x": 0.5024038461538461,
+								"y": 0.13493975903614458
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 328798961298260,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

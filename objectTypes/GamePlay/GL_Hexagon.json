@@ -1,0 +1,89 @@
+{
+	"name": "GL_Hexagon",
+	"plugin-id": "Sprite",
+	"sid": 721463014179481,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "uid_dice",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 978087991424962
+		},
+		{
+			"name": "value",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 715177293948622
+		},
+		{
+			"name": "row",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 845470101349279
+		},
+		{
+			"name": "col",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 819642925551179
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "subtract",
+			"name": "Restar"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.504,
+						"originY": 0.5103448275862069,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6664830,
+						"collisionPoly": {
+							"points": [
+								0.07199999999999998,
+								0.25747126436781625,
+								0.5093333333333324,
+								0.04367816091954023,
+								0.9519999999999995,
+								0.2965517241379311,
+								0.9506666666666669,
+								0.7172413793103447,
+								0.49066666666666686,
+								0.9609195402298852,
+								0.07333333333333357,
+								0.7241379310344832
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 878373506485501,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,198 @@
+{
+	"name": "giro_derecha",
+	"plugin-id": "Sprite",
+	"sid": 403612051733063,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 728423138032258
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 272,
+						"height": 272,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3493610,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 940204961781794,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 272,
+						"height": 272,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5495542,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 150,
+						"height": 150,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2063503,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1822526,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 150,
+						"height": 150,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2587745,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 272,
+						"height": 272,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4246271,
+						"collisionPoly": {
+							"points": [
+								0.0036496350364963502,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.003663003663003663,
+								0.9963503649635036,
+								0.9963369963369964,
+								0.0036496350364963502,
+								0.9963369963369964
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 255855435915523,
+				"name": "click",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 100
+			}
+		],
+		"subfolders": []
+	}
+}

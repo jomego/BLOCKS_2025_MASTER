@@ -1,0 +1,22 @@
+{
+	"name": "GL_ScoreTimeline",
+	"plugin-id": "Spritefont2",
+	"sid": 177951079404302,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 512,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2300863,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

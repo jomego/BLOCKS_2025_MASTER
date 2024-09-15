@@ -1,0 +1,14 @@
+{
+	"name": "EasyLocalNotifications",
+	"plugin-id": "MixonGames_EasyLocalNotifications",
+	"sid": 573391713273903,
+	"singleglobal-inst": {
+		"type": "EasyLocalNotifications",
+		"properties": {
+			"debug-mode": false
+		},
+		"uid": 7,
+		"sid": 776751367550083,
+		"tags": ""
+	}
+}

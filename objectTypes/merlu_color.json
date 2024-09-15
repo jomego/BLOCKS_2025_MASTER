@@ -1,0 +1,63 @@
+{
+	"name": "merlu_color",
+	"plugin-id": "Sprite",
+	"sid": 681605902275631,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 257,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4261112,
+						"collisionPoly": {
+							"points": [
+								0.41796875,
+								0,
+								0.4921875,
+								0,
+								0.6875,
+								0.05058365758754864,
+								0.9140625,
+								0.43190661478599224,
+								0.99609375,
+								0.7315175097276264,
+								0.8828125,
+								0.953307392996109,
+								0.0234375,
+								0.933852140077821,
+								0,
+								0.8249027237354085,
+								0,
+								0.7665369649805448,
+								0.24609375,
+								0.054474708171206226
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 346947458919984,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

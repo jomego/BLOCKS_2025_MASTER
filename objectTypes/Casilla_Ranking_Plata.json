@@ -1,0 +1,57 @@
+{
+	"name": "Casilla_Ranking_Plata",
+	"plugin-id": "Sprite",
+	"sid": 436947861527990,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 391,
+						"height": 81,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6032616,
+						"collisionPoly": {
+							"points": [
+								0.03324808184143223,
+								0,
+								1,
+								0.1111111111111111,
+								0.9974424552429667,
+								0.8518518518518519,
+								0.9718670076726342,
+								0.9506172839506173,
+								0.01278772378516624,
+								0.9753086419753086,
+								0.0025575447570332483,
+								0.9259259259259259,
+								0.0025575447570332483,
+								0.12345679012345678
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 984129577798368,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

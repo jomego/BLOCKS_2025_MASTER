@@ -1,0 +1,34 @@
+{
+	"name": "GL_DiceDragGroupTemplateFamily",
+	"plugin-id": "Sprite",
+	"sid": 622082812773858,
+	"instanceVariables": [
+		{
+			"name": "is_group_drag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 873828565872496
+		},
+		{
+			"name": "type",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 248260209106633
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 291148349084710
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"GL_DiceDragGroupTemp2",
+		"GL_DiceDragGroupTemp3",
+		"GL_DiceDragGroupTemp1"
+	]
+}

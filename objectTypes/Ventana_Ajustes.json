@@ -1,0 +1,51 @@
+{
+	"name": "Ventana_Ajustes",
+	"plugin-id": "Sprite",
+	"sid": 893152514922495,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 408,
+						"height": 566,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6894367,
+						"collisionPoly": {
+							"points": [
+								0.03676470588235294,
+								0,
+								1,
+								0.02120141342756184,
+								0.9607843137254902,
+								1,
+								0,
+								0.9770318021201413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 258358340523824,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"name": "Ventana_Pop",
+	"plugin-id": "Sprite",
+	"sid": 377956260514356,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 342,
+						"height": 447,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3628863,
+						"collisionPoly": {
+							"points": [
+								0.03216374269005848,
+								0,
+								1,
+								0.017897091722595078,
+								0.9619883040935673,
+								1,
+								0,
+								0.9821029082774049
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 614515242251063,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

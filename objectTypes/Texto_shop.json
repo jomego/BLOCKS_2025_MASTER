@@ -1,0 +1,14 @@
+{
+	"name": "Texto_shop",
+	"plugin-id": "Text",
+	"sid": 118243703443391,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	]
+}

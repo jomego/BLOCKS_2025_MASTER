@@ -1,0 +1,27 @@
+{
+	"name": "GO_TextScoreBest",
+	"plugin-id": "Spritefont2",
+	"sid": 413917028586195,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "EstablecerColor"
+		}
+	],
+	"image": {
+		"width": 1024,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2971577,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

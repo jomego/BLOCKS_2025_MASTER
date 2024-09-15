@@ -1,0 +1,22 @@
+{
+	"name": "AnuncioEnMóvil",
+	"plugin-id": "advert",
+	"sid": 730044478240774,
+	"singleglobal-inst": {
+		"type": "AnuncioEnMóvil",
+		"properties": {
+			"test-mode": false,
+			"application-id": "ca-app-pub-4304873919578100~7852726517",
+			"ios-application-id": "",
+			"debug-location": "disabled",
+			"show-on-start-up": true,
+			"publisher-id": "",
+			"show-ad-free-option": false,
+			"privacy-policy": "",
+			"show-consent": "eu"
+		},
+		"uid": 279,
+		"sid": 972000792794990,
+		"tags": ""
+	}
+}

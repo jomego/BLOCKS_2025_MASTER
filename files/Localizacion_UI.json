@@ -1,0 +1,290 @@
+{
+    "c2array": true,
+    "size": [
+        35,
+        2,
+        1
+    ],
+    "data": [
+        [
+            [
+                "Cargando..."
+            ],
+            [
+                "Loading..."
+            ]
+        ],
+        [
+            [
+                "JUGAR"
+            ],
+            [
+                "PLAY"
+            ]
+        ],
+        [
+            [
+                "TIENDA"
+            ],
+            [
+                "SHOP"
+            ]
+        ],
+        [
+            [
+                "RANKING"
+            ],
+            [
+                "RANKING"
+            ]
+        ],
+        [
+            [
+                "CONFIGURACIÓN"
+            ],
+            [
+                "SETTINGS"
+            ]
+        ],
+        [
+            [
+                "Más juegos"
+            ],
+            [
+                "More Games"
+            ]
+        ],
+        [
+            [
+                "Política Privacidad"
+            ],
+            [
+                "Privacy Policy"
+            ]
+        ],
+        [
+            [
+                "Idiomas"
+            ],
+            [
+                "Lenguage"
+            ]
+        ],
+        [
+            [
+                "MÁS JUEGOS"
+            ],
+            [
+                "MORE GAMES"
+            ]
+        ],
+        [
+            [
+                "NUEVA TIRADA"
+            ],
+            [
+                "NEW RELEASE"
+            ]
+        ],
+        [
+            [
+                "Elimina tu tirada por otra de forma aleatoria."
+            ],
+            [
+                "Remove your roll for another one at random."
+            ]
+        ],
+        [
+            [
+                "NUEVA COMBINACIÓN"
+            ],
+            [
+                "NEW COMBINATION"
+            ]
+        ],
+        [
+            [
+                "Intercambia una ficha en una tirada de 3 fichas."
+            ],
+            [
+                "Exchange a token in a roll of 3 tokens."
+            ]
+        ],
+        [
+            [
+                "BOMBA"
+            ],
+            [
+                "BOMB"
+            ]
+        ],
+        [
+            [
+                "Hace explotar los bloques de alrededor."
+            ],
+            [
+                "Makes surrounding blocks explode."
+            ]
+        ],
+        [
+            [
+                "ELEGIR FICHA"
+            ],
+            [
+                "CHOOSE CARD"
+            ]
+        ],
+        [
+            [
+                "Elimina tu ficha y elige una nueva del 1 al 6."
+            ],
+            [
+                "Delete your token and choose a new one from 1 to 6."
+            ]
+        ],
+        [
+            [
+                "ELIMINAR ANUNCIOS"
+            ],
+            [
+                "CHOOSE ADS"
+            ]
+        ],
+        [
+            [
+                "Elimina los anuncios del juego de forma permanente."
+            ],
+            [
+                "Remove ads from the game permanently."
+            ]
+        ],
+        [
+            [
+                "CONFIRMAR COMPRA"
+            ],
+            [
+                "CONFIRM PURCHASE"
+            ]
+        ],
+        [
+            [
+                "Elimina los anuncios del juego de forma permanente."
+            ],
+            [
+                "Remove ads from the game permanently."
+            ]
+        ],
+        [
+            [
+                "PRECIO:      2'99€"
+            ],
+            [
+                "PRICE:         2'99€"
+            ]
+        ],
+        [
+            [
+                "COMPRAR"
+            ],
+            [
+                "BUY"
+            ]
+        ],
+        [
+            [
+                "MEJOR PUNTUACION"
+            ],
+            [
+                "YOUR BEST"
+            ]
+        ],
+        [
+            [
+                "ABANDONAR PARTIDA"
+            ],
+            [
+                "LEAVE GAME"
+            ]
+        ],
+        [
+            [
+                "Esta seguro que desea abandonar la partida. Se perderán todos los movimientos."
+            ],
+            [
+                "Are you sure you want to quit the game? All moves will be lost."
+            ]
+        ],
+        [
+            [
+                "ACEPTAR"
+            ],
+            [
+                "ACCEPT"
+            ]
+        ],
+        [
+            [
+                "NICK NECESARIO"
+            ],
+            [
+                "NICK REQUIRED"
+            ]
+        ],
+        [
+            [
+                "Es necesario introducir un nombre/nick para que aparezca en el ranking. Rellene la casilla nombre."
+            ],
+            [
+                "It is necessary to enter a name/nickname to appear in the ranking. Fill in the name box."
+            ]
+        ],
+        [
+            [
+                "SIN PREMIO"
+            ],
+            [
+                "NO PRIZE"
+            ]
+        ],
+        [
+            [
+                "Inténtalo de nuevo mañana."
+            ],
+            [
+                "Try again tomorrow."
+            ]
+        ],
+        [
+            [
+                "¡LA RULETA  DIARIA!"
+            ],
+            [
+                "THE DAILY ROULETTE!"
+            ]
+        ],
+        [
+            [
+                "LANZAR"
+            ],
+            [
+                "LAUNCH"
+            ]
+        ],
+        [
+            [
+                "ELIGE EL BOOSTER QUE QUIERES"
+            ],
+            [
+                "PICK THE BOOSTER YOU WANT"
+            ]
+        ],
+        [
+            [
+                "Seleccione ficha"
+            ],
+            [
+                "Select tab"
+            ]
+        ]
+    ]
+}

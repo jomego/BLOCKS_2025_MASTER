@@ -1,0 +1,666 @@
+{
+	"name": "rankingEvent",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 376598652495260
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 714979636778271,
+					"parameters": {
+						"variable": "CurrentName",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 839434615273808,
+					"parameters": {
+						"variable": "CurrentScore",
+						"value": "0"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Reading Leaderboard on Start of Layout",
+					"text-color": [
+						1,
+						1,
+						1,
+						1
+					],
+					"background-color": [
+						0,
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"callFunction": "ReadCustomLeaderboard",
+					"sid": 994346576939665
+				}
+			],
+			"sid": 824877233657929
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FIREBASE2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Auth2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 468651694032127,
+									"parameters": {
+										"object": "GoogleSignIn"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "popup-oauth",
+									"objectClass": "FirebaseV9AuthBasic",
+									"sid": 408717520923816,
+									"parameters": {
+										"provider": "item1",
+										"google-prompt-select": false
+									}
+								}
+							],
+							"sid": 204224015511548
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-signed-in",
+									"objectClass": "FirebaseV9AuthBasic",
+									"sid": 958536747835104
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 967008158024212
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 959920254896117,
+									"parameters": {
+										"variable": "CurrentName",
+										"value": "FirebaseV9AuthBasic.userName"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "MyName",
+									"sid": 596996934657168,
+									"parameters": {
+										"text": "CurrentName"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "InputName",
+									"sid": 863798785219726,
+									"parameters": {
+										"text": "CurrentName"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "In_Gems",
+									"sid": 202574803900132,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "In_Score",
+									"sid": 951742619568844,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Write",
+									"sid": 273360070233880,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "AuthStatus",
+									"sid": 621589596178339,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 240157668084967
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Custom Leaderboard-Read2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-touched-object",
+											"objectClass": "Touch",
+											"sid": 136240624060888,
+											"parameters": {
+												"object": "Send",
+												"type": "start"
+											}
+										},
+										{
+											"id": "compare-text",
+											"objectClass": "InputName",
+											"sid": 695460663556954,
+											"parameters": {
+												"text": "\"\"",
+												"case": "case-insensitive"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "We are reading the Leaderboard again on clicking Send button to Update the Rank as in this Example Layout, you have the liability to change your username.",
+											"text-color": [
+												1,
+												1,
+												1,
+												1
+											],
+											"background-color": [
+												0,
+												0,
+												0,
+												0
+											]
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 226948118786611,
+											"parameters": {
+												"variable": "CurrentName",
+												"value": "InputName.Text"
+											}
+										},
+										{
+											"callFunction": "ReadCustomLeaderboard",
+											"sid": 656497072456160
+										}
+									],
+									"sid": 214977974149749
+								},
+								{
+									"functionName": "ReadCustomLeaderboard2",
+									"functionDescription": "",
+									"functionCategory": "",
+									"functionReturnType": "none",
+									"functionCopyPicked": false,
+									"functionIsAsync": false,
+									"functionParameters": [],
+									"eventType": "function-block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "1. Our Parent Node location was \"customLeaderboard/\". Leaderboard must be loaded from this location\n2. Enter the key names you want to load\n3. Enter the max number of users to be shown on leaderboard\n4. Enter a unique Read-ID for that leaderboard. This will be required for recognizing which data to show on the leaderboard. The Read-ID is provided so that multiple data can be loaded, and you can choose which one's data you want to get.",
+											"background-color": [
+												0,
+												0,
+												0,
+												1
+											]
+										},
+										{
+											"id": "advanced-read-leaderboard",
+											"objectClass": "FirebaseRDBasic",
+											"sid": 326474387589471,
+											"parameters": {
+												"location": "\"customLeaderboard/\"",
+												"order-child": "\"score\"",
+												"size": "8",
+												"id": "\"Leaderboard\"",
+												"sync": false,
+												"rank-key": "\"name\"",
+												"rank-data": "CurrentName",
+												"read-json": false,
+												"read-proui": false
+											}
+										}
+									],
+									"sid": 899267391954637
+								},
+								{
+									"eventType": "comment",
+									"text": "When Custom Leaderboard is read, use a loop to pick objects and set its text."
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-adv-trigger",
+											"objectClass": "FirebaseRDBasic",
+											"sid": 353883588416139,
+											"parameters": {
+												"id": "\"Leaderboard\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Set the Texts and Rank of Current Saved User"
+										},
+										{
+											"id": "set-text",
+											"objectClass": "TextCurrentName",
+											"sid": 951703555317861,
+											"parameters": {
+												"text": "CurrentName"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "TextCurrentScore",
+											"sid": 892918922403661,
+											"parameters": {
+												"text": "CurrentScore"
+											}
+										},
+										{
+											"type": "comment",
+											"text": "If Current User is not on Leaderboard, 0 will be returned as the rank"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 665418497108136,
+											"parameters": {
+												"variable": "CurrentRank",
+												"value": "FirebaseRDBasic.readRank(\"Leaderboard\")"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "TextCurrentRank",
+											"sid": 194124356532160,
+											"parameters": {
+												"text": "\"#\" & CurrentRank"
+											}
+										}
+									],
+									"sid": 625616997745923,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "for",
+													"objectClass": "System",
+													"sid": 808704738549057,
+													"parameters": {
+														"name": "\"i\"",
+														"start-index": "0",
+														"end-index": "7"
+													}
+												},
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 736776124875799,
+													"parameters": {
+														"object": "Score",
+														"expression": "Score.IID",
+														"comparison": 0,
+														"value": "loopindex(\"i\")"
+													}
+												},
+												{
+													"id": "pick-by-comparison",
+													"objectClass": "System",
+													"sid": 815820199960294,
+													"parameters": {
+														"object": "Name",
+														"expression": "Name.IID",
+														"comparison": 0,
+														"value": "loopindex(\"i\")"
+													}
+												}
+											],
+											"actions": [
+												{
+													"type": "comment",
+													"text": "Set Text to Database.readLeaderboard( Read-ID , KeyName , LoopIndex ) for each object"
+												},
+												{
+													"id": "set-text",
+													"objectClass": "Score",
+													"sid": 281801634714279,
+													"parameters": {
+														"text": "FirebaseRDBasic.readLeaderboard(\"Leaderboard\", \"score\", loopindex(\"i\"))"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "Name",
+													"sid": 669791667856250,
+													"parameters": {
+														"text": "FirebaseRDBasic.readLeaderboard(\"Leaderboard\", \"name\", loopindex(\"i\"))"
+													}
+												}
+											],
+											"sid": 565445935397555
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-nth-instance",
+											"objectClass": "System",
+											"sid": 721599648533861,
+											"parameters": {
+												"object": "Score",
+												"instance": "7"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 896842230238927,
+											"parameters": {
+												"variable": "MINIMO_RANKING_NUM",
+												"value": "int(Score.Text)"
+											}
+										}
+									],
+									"sid": 734040662783884
+								},
+								{
+									"eventType": "comment",
+									"text": "Highlight the Data of the Current Saved User if User is on Leaderboard"
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Custom Leaderboard-Write2",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-touched-object",
+													"objectClass": "Touch",
+													"sid": 680035094323931,
+													"parameters": {
+														"object": "Send",
+														"type": "start"
+													}
+												},
+												{
+													"id": "compare-text",
+													"objectClass": "InputName",
+													"sid": 622916017276596,
+													"parameters": {
+														"text": "\"\"",
+														"case": "case-insensitive"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 568795191415237,
+													"parameters": {
+														"variable": "CurrentScore",
+														"value": "InputScore.Text"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 142405996634687,
+													"parameters": {
+														"variable": "CurrentGems",
+														"value": "InputGems.Text"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 607590735840980,
+													"parameters": {
+														"seconds": "0.5"
+													}
+												}
+											],
+											"sid": 123168044741947,
+											"children": [
+												{
+													"eventType": "variable",
+													"name": "SEP",
+													"type": "string",
+													"initialValue": "<--Separate-->",
+													"comment": "This is the Data Separator for my Database Write Actions",
+													"isStatic": false,
+													"isConstant": true,
+													"sid": 511209986554239
+												},
+												{
+													"eventType": "comment",
+													"text": "===WITHOUT TIMESTAMP===\nIf you do not use a Timestamp, if two or more player named same, suppose \"Beebot\" saves game by using the same name at location \"customLeaderboard/Beebot\" the previous saves are overwritten.",
+													"background-color": [
+														0,
+														0,
+														0,
+														1
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-checked",
+															"objectClass": "checkbox",
+															"sid": 477371202287726,
+															"isInverted": true
+														}
+													],
+													"actions": [
+														{
+															"id": "advanced-write-leaderboard",
+															"objectClass": "FirebaseRDBasic",
+															"sid": 718922980675099,
+															"parameters": {
+																"locationlink": "\"customLeaderboard/\" & InputName.Text",
+																"key": "\"name,score\"",
+																"separator": "SEP",
+																"value": "CurrentName &SEP& CurrentScore",
+																"enforce-string": false,
+																"id": "\"\""
+															}
+														}
+													],
+													"sid": 535134515662249
+												},
+												{
+													"eventType": "comment",
+													"text": "===WITH TIMESTAMP===\nIf you use Timestamp, data is saved at \"customLeaderboard/[timestamp]\". No data will be overwritten now. So there can be 1 or more \"Beebots\" in the leaderboard.",
+													"background-color": [
+														0,
+														0,
+														0,
+														1
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-checked",
+															"objectClass": "checkbox",
+															"sid": 304314796124376
+														}
+													],
+													"actions": [
+														{
+															"id": "set-eventvar-value",
+															"objectClass": "System",
+															"sid": 452316714847115,
+															"parameters": {
+																"variable": "timestamp",
+																"value": "Date.Now"
+															}
+														},
+														{
+															"id": "advanced-write-leaderboard",
+															"objectClass": "FirebaseRDBasic",
+															"sid": 570507011810910,
+															"parameters": {
+																"locationlink": "\"customLeaderboard/\" & timestamp",
+																"key": "\"name,score\"",
+																"separator": "SEP",
+																"value": "CurrentName &SEP& CurrentScore",
+																"enforce-string": false,
+																"id": "\"\""
+															}
+														},
+														{
+															"id": "wait-for-previous-actions",
+															"objectClass": "System",
+															"sid": 182717779050704
+														},
+														{
+															"id": "go-to-layout",
+															"objectClass": "System",
+															"sid": 165904812693125,
+															"parameters": {
+																"layout": "Home"
+															}
+														}
+													],
+													"sid": 790420785760423
+												}
+											]
+										},
+										{
+											"eventType": "comment",
+											"text": "( Instead of using Name or timestamp, you can also use Email address- which will be unique to each user and choose not to show the Email address in the leaderboard\nTo understand compare the values stored in the Firebase Console )",
+											"background-color": [
+												0,
+												0,
+												0,
+												1
+											]
+										}
+									],
+									"sid": 581909935512343
+								}
+							],
+							"sid": 395882785981138
+						}
+					],
+					"sid": 577049990084154
+				}
+			],
+			"sid": 310371090253666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 126216910027211,
+					"parameters": {
+						"object": "boton_cerrar_ranking",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 100804253101124,
+					"parameters": {
+						"seconds": ".2"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 755047028257140,
+					"parameters": {
+						"reset-static": false
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 984077658931161,
+					"parameters": {
+						"group-name": "\"Dice_Drag Event\"",
+						"state": "activated"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 836314510129336,
+					"parameters": {
+						"layout": "Home"
+					}
+				}
+			],
+			"sid": 623112829448704
+		}
+	],
+	"sid": 717721290737061
+}

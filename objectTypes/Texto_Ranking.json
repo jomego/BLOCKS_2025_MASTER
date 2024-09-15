@@ -1,0 +1,14 @@
+{
+	"name": "Texto_Ranking",
+	"plugin-id": "Text",
+	"sid": 577769691692142,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	]
+}

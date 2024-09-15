@@ -1,0 +1,14 @@
+{
+	"name": "IAPMóvil",
+	"plugin-id": "CORDOVAIAP",
+	"sid": 263030347533903,
+	"singleglobal-inst": {
+		"type": "IAPMóvil",
+		"properties": {
+			"validator-url": ""
+		},
+		"uid": 291,
+		"sid": 869159136668187,
+		"tags": ""
+	}
+}

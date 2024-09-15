@@ -1,0 +1,57 @@
+{
+	"name": "Boton_Ranking_Gameplay",
+	"plugin-id": "Sprite",
+	"sid": 613332443640205,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 69,
+						"height": 53,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2503482,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9811320754716981,
+								0.2608695652173913,
+								0.9811320754716981,
+								0.07246376811594203,
+								0.8490566037735849,
+								0.028985507246376812,
+								0.7924528301886793,
+								0,
+								0.7169811320754716
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 804948231515745,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

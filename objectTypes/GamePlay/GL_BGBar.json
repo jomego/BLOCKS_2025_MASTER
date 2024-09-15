@@ -1,0 +1,65 @@
+{
+	"name": "GL_BGBar",
+	"plugin-id": "Sprite",
+	"sid": 674167508997470,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 706343780646290
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 104,
+						"height": 328,
+						"originX": 0.5,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossy",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 90838,
+						"collisionPoly": {
+							"points": [
+								0.019230769230769232,
+								0.003048780487804878,
+								0.9903846153846154,
+								0.003048780487804878,
+								0.9615384615384616,
+								0.899390243902439,
+								0.9230769230769231,
+								0.9237804878048781,
+								0.875,
+								0.9451219512195121,
+								0.4326923076923077,
+								0.9969512195121951,
+								0.09615384615384616,
+								0.9298780487804879,
+								0.019230769230769232,
+								0.8658536585365854
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 930633219114796,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
