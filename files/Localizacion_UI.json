@@ -1,7 +1,7 @@
 {
     "c2array": true,
     "size": [
-        35,
+        36,
         2,
         1
     ],
@@ -284,6 +284,14 @@
             ],
             [
                 "Select tab"
+            ]
+        ],
+        [
+            [
+                "El premio no es acumulable. Desaparecerá después de la partida."
+            ],
+            [
+                "The prize is not cumulative. It will disappear after the game."
             ]
         ]
     ]

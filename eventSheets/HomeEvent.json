@@ -140,6 +140,64 @@
 					"parameters": {
 						"reset-static": true
 					}
+				},
+				{
+					"type": "comment",
+					"text": "QUITAMOS TODO LO QUE SE HAYA GUARDADO CON LA RULETA"
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 964181618444290,
+					"parameters": {
+						"key": "\"B1\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 597690104893167,
+					"parameters": {
+						"key": "\"B2\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 662859066203129,
+					"parameters": {
+						"key": "\"B3\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 895142592854724,
+					"parameters": {
+						"key": "\"B4\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 763549020607211,
+					"parameters": {
+						"key": "\"B5\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 227506553660669,
+					"parameters": {
+						"key": "\"B6\"",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 184401405479271,

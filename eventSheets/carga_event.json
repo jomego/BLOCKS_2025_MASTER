@@ -528,6 +528,14 @@
 							"parameters": {
 								"text": "localizacion.At(34,idioma)"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_no_acumulable",
+							"sid": 618813139210725,
+							"parameters": {
+								"text": "localizacion.At(35,idioma)"
+							}
 						}
 					],
 					"sid": 153494465388488

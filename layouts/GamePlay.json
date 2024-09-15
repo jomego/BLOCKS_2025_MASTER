@@ -4659,7 +4659,7 @@
 					"behaviors": {},
 					"effects": {
 						"EstablecerColor": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"color": [
 									0,
@@ -4728,7 +4728,7 @@
 							1,
 							1,
 							1,
-							1
+							0
 						],
 						"angle": 6.271257443463015,
 						"zElevation": 0

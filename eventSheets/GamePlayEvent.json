@@ -7612,6 +7612,7 @@
 						}
 					],
 					"sid": 823514509210636,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -7619,7 +7620,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 417848766639638,
+									"sid": 717404448481573,
 									"parameters": {
 										"first-value": "GL_DiceDragChild.Count",
 										"comparison": 0,
@@ -7648,7 +7649,48 @@
 									"sid": 484075076965653
 								}
 							],
-							"sid": 766756817429981
+							"sid": 766756817429981,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 851661926025340,
+							"parameters": {
+								"object": "GL_SetDiceDrag",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 295836933841709,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 675749220555672,
+									"parameters": {
+										"first-value": "GL_DiceDragChild.Count",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "Dice_dragSpawn",
+									"sid": 786354838229450
+								}
+							],
+							"sid": 734638004632118
 						}
 					]
 				}
@@ -12322,40 +12364,6 @@
 			"sid": 111206554667500
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Teclado",
-					"sid": 365674741731110,
-					"parameters": {
-						"key": 65
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 821498878541864,
-					"parameters": {
-						"key": "\"FREE_DIA\"",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-item",
-					"objectClass": "LocalStorage",
-					"sid": 533576689989101,
-					"parameters": {
-						"key": "\"FREE_OBTENIDO\"",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 903807288910974
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "BOOSTER 1_6",
@@ -13706,6 +13714,40 @@
 				}
 			],
 			"sid": 839204898638772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 843479330374086,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 241615519826219,
+					"parameters": {
+						"key": "\"FREE_DIA\"",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-item",
+					"objectClass": "LocalStorage",
+					"sid": 227961425188655,
+					"parameters": {
+						"key": "\"FREE_OBTENIDO\"",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 846256013901095
 		}
 	],
 	"sid": 926873341169073

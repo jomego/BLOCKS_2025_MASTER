@@ -435,7 +435,8 @@
 			"video",
 			"Sprite5",
 			"MerluSinFondo",
-			"ver"
+			"ver",
+			"Text_no_acumulable"
 		],
 		"subfolders": [
 			{

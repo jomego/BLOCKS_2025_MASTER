@@ -123,6 +123,22 @@
 							}
 						},
 						{
+							"type": "comment",
+							"text": "ESTAMOS FORZANDO UN PREMIO",
+							"text-color": [
+								1,
+								1,
+								1,
+								1
+							],
+							"background-color": [
+								0.5019607843137255,
+								0.5019607843137255,
+								0.5019607843137255,
+								1
+							]
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 604583823152527,
@@ -161,6 +177,37 @@
 					],
 					"sid": 301403549892156,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 492492980028645,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "ESTO LO HEMOS PUESTO MIENTRAS PROGRAMAMOS LA BOMBA PARA QUE NOP SALGA Y SEA CAMBIADO POR 1-6"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 369643497100920,
+									"parameters": {
+										"variable": "PREMIO_RULETA",
+										"value": "6"
+									}
+								}
+							],
+							"sid": 336588129166227
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -723,12 +770,16 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "QUITAR EL 10 POR 1"
+								},
+								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 296183129113593,
+									"sid": 891642265575019,
 									"parameters": {
 										"variable": "B6",
-										"value": "1"
+										"value": "10"
 									}
 								},
 								{
