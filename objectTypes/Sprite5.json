@@ -16,7 +16,7 @@
 						"originX": 0,
 						"originY": 0,
 						"originalSource": "",
-						"exportFormat": "lossless",
+						"exportFormat": "lossy",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
 						"imageSpriteId": 8716493,

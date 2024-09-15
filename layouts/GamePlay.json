@@ -129,12 +129,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 217.864,
 								"y": 336,
@@ -171,12 +165,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 313.864,
 								"y": 335.95823273276096,
@@ -213,12 +201,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 410.864,
 								"y": 335.95823273276096,
@@ -255,12 +237,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 506.864,
 								"y": 335.95823273276096,
@@ -601,12 +577,6 @@
 								"col": 1
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 168,
 								"y": 426.9089666529691,
@@ -643,12 +613,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 265,
 								"y": 426.8671993857301,
@@ -685,12 +649,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 362,
 								"y": 426.8671993857301,
@@ -727,12 +685,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 459,
 								"y": 426.8671993857301,
@@ -769,12 +721,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 555,
 								"y": 426.8671993857301,
@@ -811,12 +757,6 @@
 								"col": 1
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 120,
 								"y": 516,
@@ -853,12 +793,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 217,
 								"y": 516,
@@ -895,12 +829,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 314,
 								"y": 516,
@@ -937,12 +865,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 411,
 								"y": 516,
@@ -979,12 +901,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 507,
 								"y": 516,
@@ -1021,12 +937,6 @@
 								"col": 6
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 603.3901942884057,
 								"y": 516,
@@ -1063,12 +973,6 @@
 								"col": 0
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 72,
 								"y": 605,
@@ -1105,12 +1009,6 @@
 								"col": 1
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 169,
 								"y": 605,
@@ -1147,12 +1045,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 266,
 								"y": 605,
@@ -1189,12 +1081,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 363,
 								"y": 605,
@@ -1231,12 +1117,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 459,
 								"y": 605,
@@ -1273,12 +1153,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 555,
 								"y": 605,
@@ -1315,12 +1189,6 @@
 								"col": 6
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 652.1092034124804,
 								"y": 605,
@@ -1357,12 +1225,6 @@
 								"col": 1
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 120,
 								"y": 694,
@@ -1399,12 +1261,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 217,
 								"y": 694,
@@ -1441,12 +1297,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 314,
 								"y": 694,
@@ -1483,12 +1333,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 411,
 								"y": 694,
@@ -1525,12 +1369,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 507,
 								"y": 694,
@@ -1567,12 +1405,6 @@
 								"col": 6
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 603,
 								"y": 694,
@@ -1609,12 +1441,6 @@
 								"col": 1
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 169,
 								"y": 784,
@@ -1651,12 +1477,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 266,
 								"y": 784,
@@ -1693,12 +1513,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 363,
 								"y": 784,
@@ -1735,12 +1549,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 460,
 								"y": 784,
@@ -1777,12 +1585,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 556,
 								"y": 784,
@@ -1819,12 +1621,6 @@
 								"col": 2
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 218,
 								"y": 874,
@@ -1861,12 +1657,6 @@
 								"col": 3
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 314,
 								"y": 874,
@@ -1903,12 +1693,6 @@
 								"col": 4
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 411,
 								"y": 874,
@@ -1945,12 +1729,6 @@
 								"col": 5
 							},
 							"behaviors": {},
-							"effects": {
-								"Restar": {
-									"isEnabled": true,
-									"parameters": {}
-								}
-							},
 							"world": {
 								"x": 507,
 								"y": 874,
@@ -2430,6 +2208,47 @@
 					"overriden": 0,
 					"subLayers": [],
 					"instances": [
+						{
+							"type": "barra",
+							"properties": {
+								"initially-visible": true,
+								"initial-animation": "Animation 1",
+								"initial-frame": 0,
+								"enable-collisions": true,
+								"live-preview": false
+							},
+							"uid": 140,
+							"sid": 890093077763401,
+							"tags": "",
+							"instanceVariables": {},
+							"behaviors": {
+								"Ancla": {
+									"properties": {
+										"left-edge": "window-left",
+										"top-edge": "window-top",
+										"right-edge": "none",
+										"bottom-edge": "none",
+										"enabled": false
+									}
+								}
+							},
+							"world": {
+								"x": 0,
+								"y": 0,
+								"width": 723.9233705621465,
+								"height": 117,
+								"originX": 0,
+								"originY": 0,
+								"color": [
+									1,
+									1,
+									1,
+									1
+								],
+								"angle": 0,
+								"zElevation": 0
+							}
+						},
 						{
 							"type": "GL_Dice",
 							"properties": {
@@ -4003,47 +3822,6 @@
 							}
 						},
 						{
-							"type": "barra",
-							"properties": {
-								"initially-visible": true,
-								"initial-animation": "Animation 1",
-								"initial-frame": 0,
-								"enable-collisions": true,
-								"live-preview": false
-							},
-							"uid": 140,
-							"sid": 890093077763401,
-							"tags": "",
-							"instanceVariables": {},
-							"behaviors": {
-								"Ancla": {
-									"properties": {
-										"left-edge": "window-left",
-										"top-edge": "window-top",
-										"right-edge": "none",
-										"bottom-edge": "none",
-										"enabled": false
-									}
-								}
-							},
-							"world": {
-								"x": -1.034736892341769,
-								"y": -2,
-								"width": 723.9233705621465,
-								"height": 117,
-								"originX": 0,
-								"originY": 0,
-								"color": [
-									1,
-									1,
-									1,
-									1
-								],
-								"angle": 0,
-								"zElevation": 0
-							}
-						},
-						{
 							"type": "GL_ButtonGoHome",
 							"properties": {
 								"initially-visible": true,
@@ -4372,7 +4150,7 @@
 						"character-height": 82,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "[[11,\" \"],[11,\".,:|\"],[12,\"Ii;!\"],[13,\"'\"],[17,\"[\"],[18,\"()]`\"],[19,\"Jj\"],[21,\"1-\"],[22,\"°\"],[23,\"\\\"\"],[25,\"EFLefl\"],[26,\"_\"],[27,\"PZpz<>\"],[28,\"BCDGHORSUbcdghorsu023579?=$£\"],[29,\"NTnt68+\"],[30,\"KQkq&€\"],[31,\"AVav4#\\/\"],[32,\"XYxy~*\"],[37,\"Mm\"],[42,\"Ww%\"],[51,\"@\"]]",
-						"scale": 0.85,
+						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -4429,7 +4207,7 @@
 						"character-height": 82,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "[[11,\" \"],[11,\".,:|\"],[12,\"Ii;!\"],[13,\"'\"],[17,\"[\"],[18,\"()]`\"],[19,\"Jj\"],[21,\"1-\"],[22,\"°\"],[23,\"\\\"\"],[25,\"EFLefl\"],[26,\"_\"],[27,\"PZpz<>\"],[28,\"BCDGHORSUbcdghorsu023579?=$£\"],[29,\"NTnt68+\"],[30,\"KQkq&€\"],[31,\"AVav4#\\/\"],[32,\"XYxy~*\"],[37,\"Mm\"],[42,\"Ww%\"],[51,\"@\"]]",
-						"scale": 0.85,
+						"scale": 1,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -4688,53 +4466,6 @@
 					}
 				},
 				{
-					"type": "puntos",
-					"properties": {
-						"text": "000000",
-						"enable-bbcode": true,
-						"font": "BebasNeue-Regular",
-						"size": 60,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							0.8666666666666667,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 144,
-					"sid": 445107025233407,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -4,
-						"y": 6,
-						"width": 714.6783043417503,
-						"height": 110.14498069932947,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 6.271257443463015,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "ANIMACION1",
 					"properties": {
 						"initially-visible": true,
@@ -4801,6 +4532,60 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GL_Puntos",
+					"properties": {
+						"text": "000000",
+						"enable-bbcode": true,
+						"character-width": 71,
+						"character-height": 85,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "[[18,\" \"],[13,\"'|\"],[14,\"l.,;:\"],[15,\"i!\"],[16,\"I\"],[19,\"`\"],[20,\"j()\"],[21,\"-[]\"],[22,\"J\"],[23,\"1\"],[24,\"f\"],[25,\"t\"],[26,\"r=<>\"],[27,\"z\\\"\\/\"],[28,\"F\"],[29,\"EL_*\"],[30,\"Z\"],[31,\"s7°\"],[32,\"acdeoquv~+\"],[33,\"bhnp?\"],[34,\"NTxy5\"],[35,\"S023689#$£\"],[36,\"k\"],[37,\"CDY\"],[38,\"BGHOPQUV4&\"],[39,\"KRXg\"],[40,\"A\"],[41,\"€\"],[43,\"w\"],[45,\"M\"],[49,\"W\"],[50,\"m\"],[66,\"@\"],[69,\"%\"]]",
+						"scale": 1,
+						"character-spacing": 2,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center",
+						"read-aloud": false
+					},
+					"uid": 152,
+					"sid": 852473334035230,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"EstablecerColor": {
+							"isEnabled": true,
+							"parameters": {
+								"color": [
+									1,
+									0.8666666666666667,
+									0,
+									1
+								]
+							}
+						}
+					},
+					"world": {
+						"x": 359.9772842959276,
+						"y": 56.10452575236621,
+						"width": 715.2047942202142,
+						"height": 95.26931283964947,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.273702832782016,
 						"zElevation": 0
 					}
 				}
@@ -6122,7 +5907,7 @@
 				{
 					"type": "Texto7",
 					"properties": {
-						"text": "Blocks Challenge                                  Versión 2.1.5",
+						"text": "Blocks Challenge+                                  Versión 1.0.5",
 						"enable-bbcode": true,
 						"font": "Fredoka-Medium",
 						"size": 16,
@@ -7443,8 +7228,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 24.244194589600966,
-						"y": 55.59222022281625,
+						"x": 18,
+						"y": -53,
 						"width": 192,
 						"height": 32,
 						"originX": 0,
@@ -7490,8 +7275,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 113.40129520570639,
-						"y": 23.785708111219847,
+						"x": 107,
+						"y": -85,
 						"width": 123,
 						"height": 32,
 						"originX": 0,
@@ -7537,8 +7322,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 24.244194589600966,
-						"y": 15.18698623103515,
+						"x": 18,
+						"y": -94,
 						"width": 85,
 						"height": 48,
 						"originX": 0,

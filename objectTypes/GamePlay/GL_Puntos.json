@@ -1,0 +1,27 @@
+{
+	"name": "GL_Puntos",
+	"plugin-id": "Spritefont2",
+	"sid": 999459199665555,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "EstablecerColor"
+		}
+	],
+	"image": {
+		"width": 1024,
+		"height": 1024,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossy",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 4649098,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -34,12 +34,7 @@
 		}
 	],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "subtract",
-			"name": "Restar"
-		}
-	],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -53,7 +48,7 @@
 						"exportFormat": "lossy",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6664830,
+						"imageSpriteId": 2826912,
 						"collisionPoly": {
 							"points": [
 								0.07199999999999998,

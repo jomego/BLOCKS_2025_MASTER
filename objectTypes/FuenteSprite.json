@@ -1,0 +1,22 @@
+{
+	"name": "FuenteSprite",
+	"plugin-id": "Spritefont2",
+	"sid": 439441015771738,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 8143206,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -293,10 +293,10 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 723644007800562,
+									"sid": 207818782499462,
 									"parameters": {
 										"variable": "B1",
-										"value": "1"
+										"value": "3"
 									}
 								},
 								{
@@ -669,10 +669,10 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 663703253831475,
+									"sid": 828605161940339,
 									"parameters": {
 										"variable": "B5",
-										"value": "1"
+										"value": "3"
 									}
 								},
 								{
@@ -771,15 +771,15 @@
 								},
 								{
 									"type": "comment",
-									"text": "QUITAR EL 10 POR 1"
+									"text": "QUITAR EL 3 POR 1"
 								},
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 891642265575019,
+									"sid": 903015574006477,
 									"parameters": {
 										"variable": "B6",
-										"value": "10"
+										"value": "3"
 									}
 								},
 								{

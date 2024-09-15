@@ -489,6 +489,14 @@
 					],
 					"actions": [
 						{
+							"id": "SetMaxFPS",
+							"objectClass": "LimitFPS",
+							"sid": 472912410647400,
+							"parameters": {
+								"max_fps": "30"
+							}
+						},
+						{
 							"callFunction": "localizacion",
 							"sid": 463606528932540
 						},
@@ -2425,6 +2433,14 @@
 															"id": "set-text",
 															"objectClass": "GL_TextScore",
 															"sid": 265294482599932,
+															"parameters": {
+																"text": "zeropad(score,5)"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "GL_Puntos",
+															"sid": 719728669809712,
 															"parameters": {
 																"text": "zeropad(score,5)"
 															}
@@ -7667,7 +7683,12 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "ESTO ES PARA INTENTAR CONTROLAR CUANDO NO EXISTE FICHA QUE SE CREE OBLIGATORIAMENTE UNA NUEVA"
+						}
+					],
 					"sid": 295836933841709,
 					"children": [
 						{

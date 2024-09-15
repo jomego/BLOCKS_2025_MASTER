@@ -290,8 +290,8 @@
 						}
 					},
 					"world": {
-						"x": 1673,
-						"y": 616,
+						"x": 1627.1666666666665,
+						"y": 505.99999999999966,
 						"width": 425.8022012580723,
 						"height": 178.66504763742876,
 						"originX": 0.5,
@@ -1622,7 +1622,7 @@
 				{
 					"type": "ver",
 					"properties": {
-						"text": "v. 1.0.3",
+						"text": "v. 1.0.5",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -2335,7 +2335,7 @@
 				{
 					"type": "Texto7",
 					"properties": {
-						"text": "Blocks Challenge                                  Versión 1.0.3",
+						"text": "Blocks Challenge+                                 Versión 1.0.5",
 						"enable-bbcode": true,
 						"font": "Fredoka-Medium",
 						"size": 16,

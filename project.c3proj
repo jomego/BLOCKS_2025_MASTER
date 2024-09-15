@@ -242,13 +242,6 @@
 			"author": "skymen",
 			"bundled": true,
 			"version": "2.0.0.3"
-		},
-		{
-			"type": "effect",
-			"id": "subtract",
-			"name": "Restar",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "mfpo5kmdvk5",
@@ -436,7 +429,8 @@
 			"Sprite5",
 			"MerluSinFondo",
 			"ver",
-			"Text_no_acumulable"
+			"Text_no_acumulable",
+			"FuenteSprite"
 		],
 		"subfolders": [
 			{
@@ -496,7 +490,8 @@
 					"N3",
 					"N4",
 					"N5",
-					"N6"
+					"N6",
+					"GL_Puntos"
 				],
 				"subfolders": [],
 				"name": "GamePlay"
@@ -801,24 +796,7 @@
 			"subfolders": []
 		},
 		"video": {
-			"items": [
-				{
-					"name": "intro_logo.webm",
-					"type": "video/webm",
-					"sid": 194508012804409,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "intro_logo.mp4",
-					"type": "video/mp4",
-					"sid": 329671427983188,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		},
 		"font": {
@@ -979,7 +957,7 @@
 			0
 		],
 		"orientations": "portrait",
-		"webgpu": "auto",
+		"webgpu": "no",
 		"gpuPreference": "default",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
