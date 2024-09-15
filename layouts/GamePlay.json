@@ -2036,8 +2036,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 618,
-								"y": 1010,
+								"x": 611,
+								"y": 1027,
 								"width": 176.39999999999998,
 								"height": 176.39999999999998,
 								"originX": 0.5,
@@ -2071,8 +2071,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 108,
-								"y": 1204,
+								"x": -190,
+								"y": 1199,
 								"width": 141,
 								"height": 106.5,
 								"originX": 0.5,
@@ -2106,8 +2106,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 116,
-								"y": 1010,
+								"x": 106,
+								"y": 1030,
 								"width": 100.5,
 								"height": 105,
 								"originX": 0.5,
@@ -2157,8 +2157,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": 141.37810014463145,
-								"y": 1006.697501651257,
+								"x": 131,
+								"y": 1027,
 								"width": 93.2773232926076,
 								"height": 81,
 								"originX": 0,
@@ -3277,7 +3277,7 @@
 								}
 							},
 							"world": {
-								"x": 1036,
+								"x": 972,
 								"y": 369,
 								"width": 100,
 								"height": 100,
@@ -3325,7 +3325,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 250,
 								"width": 100,
 								"height": 100,
@@ -3373,7 +3373,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 751,
 								"width": 100,
 								"height": 100,
@@ -3421,7 +3421,7 @@
 								}
 							},
 							"world": {
-								"x": 1036,
+								"x": 972,
 								"y": 247,
 								"width": 100,
 								"height": 100,
@@ -3469,7 +3469,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 374,
 								"width": 100,
 								"height": 100,
@@ -3517,7 +3517,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 488,
 								"width": 100,
 								"height": 100,
@@ -3565,7 +3565,7 @@
 								}
 							},
 							"world": {
-								"x": 1036,
+								"x": 972,
 								"y": 611,
 								"width": 100,
 								"height": 100,
@@ -3613,7 +3613,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 620,
 								"width": 100,
 								"height": 100,
@@ -3661,7 +3661,7 @@
 								}
 							},
 							"world": {
-								"x": 1036,
+								"x": 972,
 								"y": 488,
 								"width": 100,
 								"height": 100,
@@ -3709,7 +3709,7 @@
 								}
 							},
 							"world": {
-								"x": 1199,
+								"x": 1135,
 								"y": 894,
 								"width": 100,
 								"height": 100,
@@ -3757,7 +3757,7 @@
 								}
 							},
 							"world": {
-								"x": 1036,
+								"x": 972,
 								"y": 738,
 								"width": 100,
 								"height": 100,
@@ -3805,7 +3805,7 @@
 								}
 							},
 							"world": {
-								"x": 1041,
+								"x": 977,
 								"y": 867,
 								"width": 90,
 								"height": 90,
@@ -4270,12 +4270,12 @@
 						}
 					},
 					"world": {
-						"x": -295,
-						"y": 1788,
-						"width": 191,
-						"height": 28,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": -714,
+						"y": 2635,
+						"width": 720,
+						"height": 1280,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -4364,12 +4364,12 @@
 						}
 					},
 					"world": {
-						"x": 27,
-						"y": 1790,
-						"width": 201,
-						"height": 72,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 310,
+						"y": 2582,
+						"width": 720,
+						"height": 1280,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -5728,6 +5728,41 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "MerluSinFondo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"sid": 642665957521284,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 642665957521284,
+						"expanded": true
+					},
+					"world": {
+						"x": 95.93725220011754,
+						"y": 1204.0781043500099,
+						"width": 102.4,
+						"height": 102.80000000000001,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.148610167245046,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 901190078146889,
@@ -5907,7 +5942,7 @@
 				{
 					"type": "Texto7",
 					"properties": {
-						"text": "Blocks Challenge+                                  Versión 1.0.5",
+						"text": "Blocks Challenge+                                  Versión 1.0.6",
 						"enable-bbcode": true,
 						"font": "Fredoka-Medium",
 						"size": 16,

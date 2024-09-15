@@ -1866,9 +1866,105 @@
 															}
 														},
 														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 569791336635769,
+															"parameters": {
+																"seconds": ".5"
+															}
+														},
+														{
+															"id": "start-fade",
+															"objectClass": "GL_Combo",
+															"sid": 230728365494407,
+															"behaviorType": "Fade"
+														}
+													],
+													"sid": 754868210114262,
+													"disabled": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 395466331671833,
+															"parameters": {
+																"object-to-create": "GL_Sticker",
+																"layer": "\"GamePlay\"",
+																"x": "LayoutWidth / 2",
+																"y": "579",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "GL_Sticker",
+															"sid": 546395048409065,
+															"parameters": {
+																"animation": "sticker_string",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "set-scale",
+															"objectClass": "GL_Sticker",
+															"sid": 345811122181792,
+															"parameters": {
+																"scale": "0"
+															}
+														},
+														{
+															"id": "tween-two-properties",
+															"objectClass": "GL_Sticker",
+															"sid": 464252480578879,
+															"behaviorType": "Tween",
+															"parameters": {
+																"tags": "\"\"",
+																"property": "scale",
+																"end-x": "1",
+																"end-y": "1",
+																"time": "1",
+																"ease": "easeoutbounce",
+																"destroy-on-complete": "no",
+																"loop": "no",
+																"ping-pong": "no",
+																"repeat-count": "1"
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 702966114497274,
+															"parameters": {
+																"seconds": ".5"
+															}
+														},
+														{
+															"id": "set-instance",
+															"objectClass": "TimelineController",
+															"sid": 576169206340922,
+															"parameters": {
+																"object-class": "GL_Sticker",
+																"track-id": "\"GL_ComboTimeline\""
+															}
+														},
+														{
+															"id": "play-timeline",
+															"objectClass": "TimelineController",
+															"sid": 837721774220680,
+															"parameters": {
+																"timeline": "GL_ComboTimeline",
+																"tags": "\"\""
+															}
+														},
+														{
 															"id": "tween-one-property",
 															"objectClass": "GL_Combo",
-															"sid": 174571651561801,
+															"sid": 841386498150007,
 															"behaviorType": "Tween",
 															"parameters": {
 																"tags": "\"\"",
@@ -1885,7 +1981,7 @@
 														{
 															"id": "wait",
 															"objectClass": "System",
-															"sid": 569791336635769,
+															"sid": 409177488964130,
 															"parameters": {
 																"seconds": ".5"
 															}
@@ -1893,11 +1989,11 @@
 														{
 															"id": "start-fade",
 															"objectClass": "GL_Combo",
-															"sid": 230728365494407,
+															"sid": 804069825610649,
 															"behaviorType": "Fade"
 														}
 													],
-													"sid": 754868210114262
+													"sid": 465454598217855
 												}
 											]
 										}
@@ -1968,11 +2064,25 @@
 													"id": "create-object",
 													"objectClass": "System",
 													"sid": 663025835520307,
+													"disabled": true,
 													"parameters": {
 														"object-to-create": "GL_Combo",
 														"layer": "\"GamePlay\"",
 														"x": "x",
 														"y": "y",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 857086619188783,
+													"parameters": {
+														"object-to-create": "GL_Combo",
+														"layer": "\"GamePlay\"",
+														"x": "0",
+														"y": "50",
 														"create-hierarchy": false,
 														"template-name": "\"\""
 													}
@@ -2114,7 +2224,8 @@
 															}
 														}
 													],
-													"sid": 123819076605004
+													"sid": 123819076605004,
+													"disabled": true
 												},
 												{
 													"eventType": "block",
@@ -2245,7 +2356,123 @@
 															}
 														}
 													],
-													"sid": 273035759631361
+													"sid": 273035759631361,
+													"disabled": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 145169621626315,
+															"parameters": {
+																"first-value": "int(random(1,3))",
+																"comparison": 0,
+																"second-value": "1"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 745057649731893,
+															"parameters": {
+																"object-to-create": "ANIMACION2",
+																"layer": "\"GamePlay\"",
+																"x": "x",
+																"y": "y",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 760771089073383,
+															"parameters": {
+																"seconds": ".3"
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 664676143984040,
+															"parameters": {
+																"seconds": "0.2"
+															}
+														},
+														{
+															"id": "destroy",
+															"objectClass": "ANIMACION2",
+															"sid": 611262360243657
+														},
+														{
+															"id": "unload-object-images",
+															"objectClass": "System",
+															"sid": 942120649947039,
+															"parameters": {
+																"object": "ANIMACION2"
+															}
+														}
+													],
+													"sid": 660518174874094
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 485369628993918
+														}
+													],
+													"actions": [
+														{
+															"id": "create-object",
+															"objectClass": "System",
+															"sid": 493240875977338,
+															"parameters": {
+																"object-to-create": "ANIMACION3",
+																"layer": "\"GamePlay\"",
+																"x": "x",
+																"y": "y",
+																"create-hierarchy": false,
+																"template-name": "\"\""
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 734572273328643,
+															"parameters": {
+																"seconds": ".3"
+															}
+														},
+														{
+															"id": "wait",
+															"objectClass": "System",
+															"sid": 528288622918603,
+															"parameters": {
+																"seconds": "0.2"
+															}
+														},
+														{
+															"id": "destroy",
+															"objectClass": "ANIMACION3",
+															"sid": 612337561885443
+														},
+														{
+															"id": "unload-object-images",
+															"objectClass": "System",
+															"sid": 123957226327483,
+															"parameters": {
+																"object": "ANIMACION3"
+															}
+														}
+													],
+													"sid": 553251827103448
 												}
 											]
 										}
@@ -5961,7 +6188,6 @@
 															"id": "create-interstitial",
 															"objectClass": "AnuncioEnMóvil",
 															"sid": 305611810269988,
-															"disabled": true,
 															"parameters": {
 																"advert-id": "\"ca-app-pub-4304873919578100/9014234132\"",
 																"show": "true"

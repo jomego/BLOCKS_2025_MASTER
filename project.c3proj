@@ -430,7 +430,9 @@
 			"MerluSinFondo",
 			"ver",
 			"Text_no_acumulable",
-			"FuenteSprite"
+			"FuenteSprite",
+			"combo",
+			"combo2"
 		],
 		"subfolders": [
 			{
@@ -925,7 +927,7 @@
 	},
 	"properties": {
 		"description": "Juego matematico de reflejos y habilidad.",
-		"version": "1.0.2",
+		"version": "1.0.5",
 		"author": "jomego",
 		"authorEmail": "info@gamez-studio.com",
 		"authorWebsite": "https://gamez-studio.com",

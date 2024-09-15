@@ -540,7 +540,7 @@
 						"text": "El premio no es acumulable. Desaparecerá después de la partida.",
 						"enable-bbcode": true,
 						"font": "Bevellier-Italic",
-						"size": 17,
+						"size": 20,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
