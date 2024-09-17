@@ -223,6 +223,13 @@
 		},
 		{
 			"type": "effect",
+			"id": "highlightshadow",
+			"name": "Brillo sombra",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "pulse",
 			"name": "Pulso",
 			"author": "Danguafer/Silexars",
@@ -927,7 +934,7 @@
 	},
 	"properties": {
 		"description": "Juego matematico de reflejos y habilidad.",
-		"version": "1.0.5",
+		"version": "1.0.7",
 		"author": "jomego",
 		"authorEmail": "info@gamez-studio.com",
 		"authorWebsite": "https://gamez-studio.com",

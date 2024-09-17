@@ -97,8 +97,8 @@
 					"world": {
 						"x": 362,
 						"y": 187,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -132,8 +132,8 @@
 					"world": {
 						"x": 362,
 						"y": 325,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -167,8 +167,8 @@
 					"world": {
 						"x": 362,
 						"y": 463,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -202,8 +202,8 @@
 					"world": {
 						"x": 362,
 						"y": 600,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -237,8 +237,8 @@
 					"world": {
 						"x": 362,
 						"y": 739,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -272,8 +272,8 @@
 					"world": {
 						"x": 362,
 						"y": 877,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -307,8 +307,8 @@
 					"world": {
 						"x": 362,
 						"y": 1010,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -342,8 +342,8 @@
 					"world": {
 						"x": 362,
 						"y": 1144,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -630,9 +630,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 169,
-						"width": 113,
+						"x": 529.9999998313715,
+						"y": 171,
+						"width": 95.7610311686285,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -677,9 +677,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 305,
-						"width": 113,
+						"x": 530,
+						"y": 308,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -724,9 +724,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 443,
-						"width": 113,
+						"x": 530,
+						"y": 447,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -771,9 +771,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 580,
-						"width": 113,
+						"x": 530,
+						"y": 584,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -818,9 +818,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 721,
-						"width": 113,
+						"x": 530,
+						"y": 723,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -865,9 +865,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 859,
-						"width": 113,
+						"x": 530,
+						"y": 861,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -912,9 +912,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 992,
-						"width": 113,
+						"x": 530,
+						"y": 994,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -959,9 +959,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 1125,
-						"width": 113,
+						"x": 530,
+						"y": 1128,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -1381,6 +1381,15 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BrilloSombra": {
+							"isEnabled": true,
+							"parameters": {
+								"shadow-factor": 0.7,
+								"highlight-factor": 0.9
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 238708004342632,
 						"expanded": true

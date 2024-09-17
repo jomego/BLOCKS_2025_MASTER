@@ -96,7 +96,7 @@
 						"exportFormat": "lossy",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9721083,
+						"imageSpriteId": 2244793,
 						"collisionPoly": {
 							"points": [
 								0.24626865671641784,
@@ -120,7 +120,7 @@
 				],
 				"sid": 345944640650634,
 				"name": "1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

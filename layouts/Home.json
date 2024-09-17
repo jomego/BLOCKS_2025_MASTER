@@ -82,10 +82,10 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 357,
-						"y": 315,
-						"width": 444.9610846990462,
-						"height": 554.153988919671,
+						"x": 359,
+						"y": 345,
+						"width": 444,
+						"height": 554,
 						"originX": 0.49079754601226994,
 						"originY": 0.4802955665024631,
 						"color": [
@@ -972,8 +972,8 @@
 					"world": {
 						"x": 1595,
 						"y": 824,
-						"width": 119.79889505551306,
-						"height": 50.39159871382692,
+						"width": 285.23546441788824,
+						"height": 119.79889505551306,
 						"originX": 0.48694404591104734,
 						"originY": 0.460140306122449,
 						"color": [
@@ -1230,50 +1230,6 @@
 					}
 				},
 				{
-					"type": "BlocksCHALLENGE",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 36,
-					"sid": 954769451524073,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"effects": {
-						"Pulso": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.05,
-								"lighting": 0,
-								"speed": 10,
-								"frequency": 30,
-								"center-x": 0.5,
-								"center-y": 0.5
-							}
-						}
-					},
-					"world": {
-						"x": 366,
-						"y": 293,
-						"width": 357.32644622008405,
-						"height": 163.44079602891742,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "PLAY",
 					"properties": {
 						"initially-visible": true,
@@ -1393,8 +1349,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 436,
-						"y": 1145,
+						"x": 356,
+						"y": 1121,
 						"width": 99,
 						"height": 99,
 						"originX": 0.5,
@@ -1428,8 +1384,8 @@
 						"expanded": true
 					},
 					"world": {
-						"x": 286,
-						"y": 1145,
+						"x": -449,
+						"y": 1060,
 						"width": 99,
 						"height": 99,
 						"originX": 0.5,
@@ -1648,7 +1604,7 @@
 				{
 					"type": "ver",
 					"properties": {
-						"text": "v. 1.0.6",
+						"text": "v. 1.0.7",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -1822,8 +1778,8 @@
 					"world": {
 						"x": 360,
 						"y": 188,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1857,8 +1813,8 @@
 					"world": {
 						"x": 360,
 						"y": 326,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1892,8 +1848,8 @@
 					"world": {
 						"x": 360,
 						"y": 464,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1927,8 +1883,8 @@
 					"world": {
 						"x": 360,
 						"y": 601,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1962,8 +1918,8 @@
 					"world": {
 						"x": 360,
 						"y": 740,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1997,8 +1953,8 @@
 					"world": {
 						"x": 360,
 						"y": 878,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2032,8 +1988,8 @@
 					"world": {
 						"x": 360,
 						"y": 1011,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2067,8 +2023,8 @@
 					"world": {
 						"x": 360,
 						"y": 1145,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

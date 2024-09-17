@@ -2003,7 +2003,7 @@
 							"world": {
 								"x": 368,
 								"y": 219,
-								"width": 179.0706968462851,
+								"width": 283.0706968462851,
 								"height": 37,
 								"originX": 0.5,
 								"originY": 0.5,
@@ -2071,8 +2071,8 @@
 								"expanded": true
 							},
 							"world": {
-								"x": -190,
-								"y": 1199,
+								"x": -90,
+								"y": 1440,
 								"width": 141,
 								"height": 106.5,
 								"originX": 0.5,
@@ -4270,8 +4270,8 @@
 						}
 					},
 					"world": {
-						"x": -714,
-						"y": 2635,
+						"x": -2024,
+						"y": 4,
 						"width": 720,
 						"height": 1280,
 						"originX": 0,
@@ -4364,8 +4364,8 @@
 						}
 					},
 					"world": {
-						"x": 310,
-						"y": 2582,
+						"x": -1186,
+						"y": 13,
 						"width": 720,
 						"height": 1280,
 						"originX": 0,
@@ -4397,8 +4397,8 @@
 					"world": {
 						"x": 359,
 						"y": 155,
-						"width": 239.39999999999998,
-						"height": 100.69999999999999,
+						"width": 300,
+						"height": 126,
 						"originX": 0.48694404591104734,
 						"originY": 0.460140306122449,
 						"color": [
@@ -4414,13 +4414,13 @@
 				{
 					"type": "GL_TextScoreBest",
 					"properties": {
-						"text": "000000",
+						"text": "00000",
 						"enable-bbcode": true,
 						"character-width": 71,
 						"character-height": 85,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "[[18,\" \"],[13,\"'|\"],[14,\"l.,;:\"],[15,\"i!\"],[16,\"I\"],[19,\"`\"],[20,\"j()\"],[21,\"-[]\"],[22,\"J\"],[23,\"1\"],[24,\"f\"],[25,\"t\"],[26,\"r=<>\"],[27,\"z\\\"\\/\"],[28,\"F\"],[29,\"EL_*\"],[30,\"Z\"],[31,\"s7°\"],[32,\"acdeoquv~+\"],[33,\"bhnp?\"],[34,\"NTxy5\"],[35,\"S023689#$£\"],[36,\"k\"],[37,\"CDY\"],[38,\"BGHOPQUV4&\"],[39,\"KRXg\"],[40,\"A\"],[41,\"€\"],[43,\"w\"],[45,\"M\"],[49,\"W\"],[50,\"m\"],[66,\"@\"],[69,\"%\"]]",
-						"scale": 0.6,
+						"scale": 0.75,
 						"character-spacing": 1,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -4437,7 +4437,7 @@
 					"behaviors": {},
 					"effects": {
 						"EstablecerColor": {
-							"isEnabled": false,
+							"isEnabled": true,
 							"parameters": {
 								"color": [
 									0,
@@ -4449,9 +4449,9 @@
 						}
 					},
 					"world": {
-						"x": 396.01323379809037,
-						"y": 160.89556416225946,
-						"width": 141.9038458906017,
+						"x": 408,
+						"y": 159,
+						"width": 170.90254209922105,
 						"height": 54.60734791216506,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -4586,6 +4586,41 @@
 							1
 						],
 						"angle": 6.273702832782016,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MerluSinFondo",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 144,
+					"sid": 642665957521284,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 642665957521284,
+						"expanded": true
+					},
+					"world": {
+						"x": 95.93725220011754,
+						"y": 1204.0781043500099,
+						"width": 102.4,
+						"height": 102.80000000000001,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.148610167245046,
 						"zElevation": 0
 					}
 				}
@@ -4981,8 +5016,8 @@
 					"world": {
 						"x": -598,
 						"y": 785,
-						"width": 189,
-						"height": 79.5,
+						"width": 300,
+						"height": 126,
 						"originX": 0.48694404591104734,
 						"originY": 0.460140306122449,
 						"color": [
@@ -5004,7 +5039,7 @@
 						"character-height": 85,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "[[18,\" \"],[13,\"'|\"],[14,\"l.,;:\"],[15,\"i!\"],[16,\"I\"],[19,\"`\"],[20,\"j()\"],[21,\"-[]\"],[22,\"J\"],[23,\"1\"],[24,\"f\"],[25,\"t\"],[26,\"r=<>\"],[27,\"z\\\"\\/\"],[28,\"F\"],[29,\"EL_*\"],[30,\"Z\"],[31,\"s7°\"],[32,\"acdeoquv~+\"],[33,\"bhnp?\"],[34,\"NTxy5\"],[35,\"S023689#$£\"],[36,\"k\"],[37,\"CDY\"],[38,\"BGHOPQUV4&\"],[39,\"KRXg\"],[40,\"A\"],[41,\"€\"],[43,\"w\"],[45,\"M\"],[49,\"W\"],[50,\"m\"],[66,\"@\"],[69,\"%\"]]",
-						"scale": 0.6,
+						"scale": 0.7,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -5065,9 +5100,9 @@
 						"expanded": true
 					},
 					"world": {
-						"x": -567,
-						"y": 792,
-						"width": 110.80220125807227,
+						"x": -549,
+						"y": 791,
+						"width": 190.80220125807227,
 						"height": 52.665047637428756,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -5728,41 +5763,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "MerluSinFondo",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 144,
-					"sid": 642665957521284,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 642665957521284,
-						"expanded": true
-					},
-					"world": {
-						"x": 95.93725220011754,
-						"y": 1204.0781043500099,
-						"width": 102.4,
-						"height": 102.80000000000001,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.148610167245046,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 901190078146889,
@@ -5942,7 +5942,7 @@
 				{
 					"type": "Texto7",
 					"properties": {
-						"text": "Blocks Challenge+                                  Versión 1.0.6",
+						"text": "Blocks Challenge+                                  Versión 1.0.7",
 						"enable-bbcode": true,
 						"font": "Fredoka-Medium",
 						"size": 16,
@@ -6791,8 +6791,8 @@
 					"world": {
 						"x": 360,
 						"y": 185,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6826,8 +6826,8 @@
 					"world": {
 						"x": 360,
 						"y": 323,
-						"width": 586.5,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6861,8 +6861,8 @@
 					"world": {
 						"x": 360,
 						"y": 461,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6896,8 +6896,8 @@
 					"world": {
 						"x": 360,
 						"y": 598,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6931,8 +6931,8 @@
 					"world": {
 						"x": 360,
 						"y": 737,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -6966,8 +6966,8 @@
 					"world": {
 						"x": 360,
 						"y": 875,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -7001,8 +7001,8 @@
 					"world": {
 						"x": 360,
 						"y": 1008,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -7036,8 +7036,8 @@
 					"world": {
 						"x": 360,
 						"y": 1142,
-						"width": 588,
-						"height": 121.5,
+						"width": 589.5,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -7404,9 +7404,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 167,
-						"width": 113,
+						"x": 534,
+						"y": 170,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7451,9 +7451,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 303,
-						"width": 113,
+						"x": 534,
+						"y": 306,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7498,9 +7498,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 441,
-						"width": 113,
+						"x": 534,
+						"y": 445,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7545,9 +7545,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 578,
-						"width": 113,
+						"x": 534,
+						"y": 582,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7592,9 +7592,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 719,
-						"width": 113,
+						"x": 534,
+						"y": 722,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7639,9 +7639,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 857,
-						"width": 113,
+						"x": 534,
+						"y": 860,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7686,9 +7686,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 990,
-						"width": 113,
+						"x": 534,
+						"y": 993,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -7733,9 +7733,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 515,
-						"y": 1123,
-						"width": 113,
+						"x": 534,
+						"y": 1126,
+						"width": 95.761031,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -8155,6 +8155,15 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"BrilloSombra": {
+							"isEnabled": true,
+							"parameters": {
+								"shadow-factor": 0,
+								"highlight-factor": 1
+							}
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 398377874382534,
 						"expanded": true
